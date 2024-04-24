@@ -1,0 +1,30 @@
+﻿<Page x:Class="DiplomKapustinMaximISP_41.Pages.SkillTestPg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DiplomKapustinMaximISP_41.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SkillTestPg">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Label Content="Добро пожаловать на Базовый вводный курс в язык программирования C++" FontSize="20"
+                   HorizontalContentAlignment="Center" FontFamily="Cambria"/>
+            <Label Content="Попробуйте оценить свой нынешний уровень владения языком" FontSize="25"
+                   HorizontalContentAlignment="Center" FontFamily="Cambria"/>
+            <RibbonSeparator Height="30"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <RadioButton x:Name="Low" Content="Я новичок" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cambria"/>
+                    <RibbonSeparator Height="15"/>
+                    <RadioButton x:Name="Med" IsChecked="True" Content="Я что-то понимаю" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cambria"/>
+                    <RibbonSeparator Height="15"/>
+                    <RadioButton x:Name="High" Content="Я профессионал" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontFamily="Cambria"/>
+                    <RibbonSeparator Height="15"/>
+                    <Button Content="Продолжить" Height="25" Width="100" FontSize="15" Click="Continue_Click" FontFamily="Cambria"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

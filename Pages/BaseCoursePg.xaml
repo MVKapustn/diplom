@@ -6,11 +6,30 @@
       xmlns:local="clr-namespace:DiplomKapustinMaximISP_41.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="BaseCoursePg">
+      Title="BaseCoursePg" Initialized="Page_Initialized">
 
     <Grid>
-        <TabControl x:Name="tabControlLow" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35">
-            <TabItem Header="О курсе" Width="70" FontFamily="Cambria">
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <TabControl x:Name="tabControlLow" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="White" BorderBrush="Black">
+            <TabControl.Background>
+                <SolidColorBrush Color="#FF00CC6C" Opacity="0.5"/>
+            </TabControl.Background>
+            <TabItem Header="О курсе" Width="70" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
                 <ScrollViewer>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -24,82 +43,332 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="15" Text="Для вашего уровня владения языком будет преложено пройти следующий план изучения языка C++" TextWrapping="WrapWithOverflow" FontFamily="Cambria"/>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="1) Что такое язык программирования?"/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="2) Что такое C++? Сферы применения и достоинства."/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="3) Типы данных в языке C++"/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="4) Ввод-вывод данных (cin, cout)"/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="5) Условные конструкции (if, else)"/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="6) Конструкция switch-case "/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru" Text="7) Циклические конструкции (for, while)"/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,10,0,0" FontSize="25" Text="Для вашего уровня владения языком будет преложено пройти следующий план изучения языка C++:" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Что такое язык программирования? (интерактивное содержание)"/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="2) Что такое C++? Сферы применения и достоинства."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="3) Типы данных в языках программирования. Типы данных в C++."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Ввод-вывод данных (cin, cout)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Условные конструкции (if, else)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Конструкция switch-case."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Циклические конструкции (for, while)."/></TextBlock>
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№1" Width="50" FontFamily="Cambria">
+            <TabItem Header="№1" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
                 <ScrollViewer>
                     <StackPanel>
-                        <RibbonSeparator Height="20"/>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria"><Run Language="ru-ru"/><Run Text="Что такое язык программирования?"/></TextBlock>
-                        <RibbonSeparator Height="10"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Что такое язык программирования?" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                            Text="        Язы́к программи́рования — формальный язык, предназначенный для записи компьютерных программ. Язык программирования определяет набор лексических, синтаксических и семантических правил, определяющих внешний вид программы и действия, которые выполнит исполнитель (обычно — ЭВМ) под её управлением."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            Text="        Язык программирования — формальный язык, предназначенный для записи компьютерных программ. Язык программирования определяет набор лексических, синтаксических и семантических правил, определяющих внешний вид программы и действия, которые выполнит исполнитель (обычно — ЭВМ) под её управлением."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        Со времени создания первых программируемых машин человечество придумало более восьми тысяч языков программирования (включая эзотерические). Каждый год их число увеличивается. Некоторыми языками умеет пользоваться только небольшое число их собственных разработчиков, другие становятся известны миллионам людей. Профессиональные программисты могут владеть несколькими языками программирования."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        Язык программирования предназначен для написания компьютерных программ, которые представляют собой набор правил, позволяющих компьютеру выполнить тот или иной вычислительный процесс, организовать управление различными объектами, и т. п. Язык программирования отличается от естественных языков тем, что предназначен для управления ЭВМ, в то время как естественные языки используются, прежде всего, для общения людей между собой. Большинство языков программирования использует специальные конструкции для определения и манипулирования структурами данных и управления процессом вычислений."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        Как правило, язык программирования определяется не только через спецификации стандарта языка, формально определяющие его синтаксис и семантику, но и через воплощения (реализации) стандарта — программные средства, обеспечивающие трансляцию или интерпретацию программ на этом языке; такие программные средства различаются по производителю, марке и варианту (версии), времени выпуска, полноте воплощения стандарта, дополнительным возможностям; могут иметь определённые ошибки или особенности воплощения, влияющие на практику использования языка или даже на его стандарт."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
-                        <RibbonSeparator Height="20"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                         <Image Source="/Images/languages.jpg" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
-                        <RibbonSeparator Height="5"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                             Text="        	Рисунок 1. Разнообразие языков программирования"	                                        
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Cambria"/>
-                        <RibbonSeparator Height="5"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№2" Width="50" FontFamily="Cambria">
+            <TabItem Header="№2" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
                 <ScrollViewer>
                     <StackPanel>
-                        <RibbonSeparator Height="20"/>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria" Text="Что такое C++? Сферы применения и достоинства."/>
-                        <RibbonSeparator Height="10"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1"
+                                   TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Что такое C++? Сферы применения и достоинства."  Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="          C++ (читается си-плюс-плюс) — компилируемый, статически типизированный язык программирования общего назначения."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="          Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование. Язык имеет богатую стандартную библиотеку, которая включает в себя распространённые контейнеры и алгоритмы, ввод-вывод, регулярные выражения, поддержку многопоточности и другие возможности. C++ сочетает свойства как высокоуровневых, так и низкоуровневых языков. В сравнении с его предшественником — языком C — наибольшее внимание уделено поддержке объектно-ориентированного и обобщённого программирования."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="          C++ широко используется для разработки программного обеспечения, являясь одним из самых популярных языков программирования. Область его применения включает создание операционных систем, разнообразных прикладных программ, драйверов устройств, приложений для встраиваемых систем, высокопроизводительных серверов, а также компьютерных игр. Существует множество реализаций языка C++, как бесплатных, так и коммерческих и для различных платформ. Например, на платформе x86 это GCC, Clang, Visual C++, Intel C++ Compiler, Embarcadero (Borland) C++ Builder и другие. C++ оказал огромное влияние на другие языки программирования, в первую очередь на Java и C#."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	Преимущества:"	                                        
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	1) Высокая скорость выполнения и эффективное управление памятью благодаря компиляции в машинный код;"
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	2) Широкие возможности для системного программирования, геймдева и высокопроизводительного ПО;"
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	3) Множество библиотек и фреймворков, позволяющих создавать различные типы приложений."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Cambria"/>
-                        <RibbonSeparator Height="20"/>
-                        <Image Source="/Images/C++.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
-                        <RibbonSeparator Height="5"/>
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cpp.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                            Text="        	Рисунок 2. Пример кода на языке C++"	                                        
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Cambria"/>
-                        <RibbonSeparator Height="5"/>
+                            Text="        	Рисунок 2. Листинг кода на языке C++"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
+            <TabItem Header="№3" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
+                <ScrollViewer>
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria" Text="Типы данных в языках программирования. Типы данных в C++." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          Типы данных в языках программирования (ЯП) представляют собой способ классификации и организации данных, которые могут быть использованы в программе. Они не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными. Типы данных в ЯП являются важной концепцией, поскольку они помогают программистам:"
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          1) Контролировать типы значений: Типы данных позволяют программистам контролировать типы значений, с которыми они работают, что обеспечивает безопасность и предотвращает нежелательные ошибки в программе."
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          2) Повышать эффективность выполнения программы, т.к правильный выбор типов данных может повысить эффективность выполнения программы, поскольку определенные типы данных могут быть более подходящими для определенных операций."
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="        	 В C++ существует множество различных типов данных, каждый из которых предназначен для хранения определенного вида информации. Некоторые из основных типов данных в C++ включают целочисленные типы (int, short, long), типы с плавающей запятой (float, double), символьные типы (char), логический тип (bool) и другие. Типы данных в C++ не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными."	                                        
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cppCode.png" Width="500" Height="350" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                 Text="        	Рисунок 3. Листинг кода C++ с переменными"	                                        
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№4" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
+                <ScrollViewer>
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
+                                   TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Ввод - вывод данных (cin, cout)" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          В C++ ввод и вывод данных осуществляются с использованием потоков. Для вывода данных используется поток вывода (output stream), который обозначается как cout, а для ввода данных - поток ввода (input stream), обозначаемый как cin. Для работы с потоками ввода-вывода необходимо подключить заголовочный файл iostream."
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          Пример ввода данных в C++ с использованием cin:"
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cinCode.png" Width="533" Height="240" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                Text="        	Рисунок 4. Листинг кода C++ с вводом данных"	                                        
+                                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                Text="         	Пример вывода данных в C++ с использованием cout:"
+                                TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/coutCode.png" Width="533" Height="170" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                 Text="        	Рисунок 5. Листинг кода C++ с выводом данных"	                                        
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
+                <ScrollViewer>
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria" Text="Условные конструкции (if, else)." Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                                 Text="          Условные конструкции в C++ позволяют программе принимать решения на основе определенных условий. В языке C++ существует лишь два условных оператора: if и else, однако их комбинации позволяют производить достаточно сложные ветвления, такие как if-else или if-else-if-else:"
+                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/ifCode.png" Width="533" Height="240" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                Text="        	Рисунок 6. Листинг кода C++ с оператором If"	                                        
+                                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/ifElseCode.png" Width="533" Height="270" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                Text="        	Рисунок 7. Листинг кода C++ с операторами If - Else"	                                        
+                                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/IfElseIfElseCode.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                                Text="        	Рисунок 8. Листинг кода C++ с операторами If - Else - If - Else"	                                        
+                                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
+                <StackPanel VerticalAlignment="Center">
+                    <RibbonSeparator Height="20">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White"/>
+                    <RibbonSeparator Height="20">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <Button Content="Перейти к тесту" Height="35" Width="150" FontSize="20"
+                    FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White">
+                        <Button.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </Button.BorderBrush>
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </TabItem>
         </TabControl>
+        <TabControl x:Name="tabControlMed" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35" Visibility="Hidden" IsEnabled="False"></TabControl>
+        <TabControl x:Name="tabControlHigh" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35" Visibility="Hidden" IsEnabled="False"></TabControl>
+
     </Grid>
 </Page>

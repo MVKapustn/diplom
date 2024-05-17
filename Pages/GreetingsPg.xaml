@@ -9,23 +9,104 @@
       Title="GreetingsPg">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label            
-            Content="Добро пожаловать!" 
-            FontSize="25" 
-            Grid.Row="1" 
-            VerticalAlignment="Center" 
-            HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Cambria"
-        />
-        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
-            <Button Content="Начать работу" Grid.Row="1" Height="25" Width="120" FontSize="15" VerticalAlignment="Bottom" Click="Start_Click" FontFamily="Cambria"/>
-            <RibbonSeparator Width="10"/>
-            <Button Content="О программе" Grid.Row="1" Height="25" Width="120" FontSize="15" VerticalAlignment="Bottom" Click="AboutProgram_CLick" FontFamily="Cambria"/>
-            <RibbonSeparator Width="10"/>
-            <Button Content="Выход" Grid.Row="1" Height="25" Width="120" FontSize="15" VerticalAlignment="Bottom" Click="Exit_Click" FontFamily="Cambria"/>
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <StackPanel Grid.Row="1">
+            <Label            
+                Content="ДОБРО ПОЖАЛОВАТЬ" 
+                FontSize="45"                
+                VerticalAlignment="Top" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Center" 
+                FontFamily="Franklin Gothic Medium" 
+                Foreground="White"             
+            />
+            <Label            
+                Content="Вас приветствует обучающая программа" 
+                FontSize="30"                 
+                VerticalAlignment="Center" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Center"
+                FontFamily="Franklin Gothic Medium" 
+                Foreground="White"            
+            />
+            <Label            
+                Content="Изучение языка С++"
+                FontSize="28"                 
+                VerticalAlignment="Bottom" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Center"
+                FontFamily="Franklin Gothic Medium" 
+                Foreground="White"           
+                Margin="20,0,0,0"
+            />
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Height="70">
+            <Button Content="Приступить к изучению программирования" 
+                    Grid.Row="1" Height="35" Width="420" FontSize="20" 
+                    VerticalAlignment="Bottom" Click="Start_Click" 
+                    FontFamily="Franklin Gothic Medium" Foreground="White" 
+                    Background="Black">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                </Button.BorderBrush>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <RibbonSeparator Height="5" Width="0"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Сведения о программе" Grid.Row="1" Height="30" Width="300" 
+                        FontSize="20" VerticalAlignment="Bottom" 
+                        Click="AboutProgram_CLick" FontFamily="Franklin Gothic Medium" 
+                        Background="Black" Foreground="White">
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <RibbonSeparator Width="5" Foreground="{x:Null}">
+                    <RibbonSeparator.OpacityMask>
+                        <SolidColorBrush Color="Black" Opacity="0"/>
+                    </RibbonSeparator.OpacityMask>
+                </RibbonSeparator>
+                <Button Content="Выход" Grid.Row="1" Height="30" Width="115" 
+                        FontSize="20" VerticalAlignment="Bottom" Click="Exit_Click"
+                        FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White">
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>                
+            </StackPanel>            
         </StackPanel>
     </Grid>
 </Page>

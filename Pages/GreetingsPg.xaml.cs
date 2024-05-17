@@ -1,4 +1,4 @@
-﻿using DiplomKapustinMaximISP_41.Classes;
+﻿using AdditionalLibrary.Classes;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -10,20 +10,18 @@ namespace DiplomKapustinMaximISP_41.Pages
         {
             InitializeComponent();
         }
-        private void Start_Click(object sender, System.Windows.RoutedEventArgs e)
-        {           
-            Helper.Navigate("TestChoosingPg");            
-        }
-
-        private void AboutProgram_CLick(object sender, System.Windows.RoutedEventArgs e)
+        private void Start_Click(object sender, RoutedEventArgs e)
         {
-            string message = "Программа \"Вставьте текст\" выполнена студентом группы ИСП-41 Капустиным Максимом Викторовичем в рамках выпускной квалификационной работы.";
+            PagesHelper.GetTo("SkillTestPg");
+        }
+        private void AboutProgram_CLick(object sender, RoutedEventArgs e)
+        {
+            string message = "Программа \"Изучение языка C++\" выполнена студентом группы ИСП-41 Капустиным Максимом Викторовичем в рамках преддипломного проекта.";
             _ = MessageBox.Show(message, "О программе", MessageBoxButton.OK, MessageBoxImage.Information);
         }
-
-        private void Exit_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            Helper.MainWindow.Close();
+            PagesHelper.MainWindow?.Close();
         }
     }
 }

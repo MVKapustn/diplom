@@ -1,8 +1,8 @@
-﻿using DiplomKapustinMaximISP_41.Classes;
+﻿using AdditionalLibrary.Classes;
 using System.Windows.Controls;
 
 namespace DiplomKapustinMaximISP_41.Pages
-{   
+{
     public partial class TestChoosingPg : Page
     {
         public TestChoosingPg()
@@ -12,7 +12,7 @@ namespace DiplomKapustinMaximISP_41.Pages
 
         private void BaseCourse_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            Helper.Navigate("SkillTestPg");
+            PagesHelper.GetTo("BaseTestPgs/BaseTestPg1");
         }
     }
 }

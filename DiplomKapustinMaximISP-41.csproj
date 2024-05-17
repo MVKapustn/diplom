@@ -10,13 +10,42 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\c++.png" />
-    <None Remove="Images\languages.jpg" />
+    <Compile Remove="Lib\**" />
+    <EmbeddedResource Remove="Lib\**" />
+    <None Remove="Lib\**" />
+    <Page Remove="Lib\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\c++.png" />
+    <None Remove="Images\cinCode.png" />
+    <None Remove="Images\coutCode.png" />
+    <None Remove="Images\cpp.png" />
+    <None Remove="Images\cppCode.png" />
+    <None Remove="Images\ifCode.png" />
+    <None Remove="Images\ifElseCode.png" />
+    <None Remove="Images\ifElseIfElseCode.png" />
+    <None Remove="Images\languages.jpg" />
+    <None Remove="Images\testIf1.bmp" />
+    <None Remove="Images\testIf2.bmp" />
+    <None Remove="Images\testIf3.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Lib\AdditionalLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\cinCode.png" />
+    <Resource Include="Images\coutCode.png" />
+    <Resource Include="Images\cpp.png" />
+    <Resource Include="Images\cppCode.png" />
+    <Resource Include="Images\ifCode.png" />
+    <Resource Include="Images\ifElseCode.png" />
+    <Resource Include="Images\ifElseIfElseCode.png" />
     <Resource Include="Images\languages.jpg" />
+    <Resource Include="Images\testIf1.bmp" />
+    <Resource Include="Images\testIf2.bmp" />
+    <Resource Include="Images\testIf3.bmp" />
   </ItemGroup>
 
 </Project>

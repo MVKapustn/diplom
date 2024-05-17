@@ -8,22 +8,201 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SkillTestPg">
     <Grid>
-        <StackPanel VerticalAlignment="Center">
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <StackPanel VerticalAlignment="Center" Margin="0,60,0,0">
             <Label Content="Добро пожаловать на Базовый вводный курс в язык программирования C++" FontSize="20"
-                   HorizontalContentAlignment="Center" FontFamily="Cambria"/>
+                   HorizontalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
             <Label Content="Попробуйте оценить свой нынешний уровень владения языком" FontSize="25"
-                   HorizontalContentAlignment="Center" FontFamily="Cambria"/>
-            <RibbonSeparator Height="30"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <StackPanel>
-                    <RadioButton x:Name="Low" Content="Я новичок" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cambria"/>
-                    <RibbonSeparator Height="15"/>
-                    <RadioButton x:Name="Med" IsChecked="True" Content="Я что-то понимаю" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cambria"/>
-                    <RibbonSeparator Height="15"/>
-                    <RadioButton x:Name="High" Content="Я профессионал" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" VerticalContentAlignment="Center" FontFamily="Cambria"/>
-                    <RibbonSeparator Height="15"/>
-                    <Button Content="Продолжить" Height="25" Width="100" FontSize="15" Click="Continue_Click" FontFamily="Cambria"/>
+                   HorizontalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            <RibbonSeparator Height="30">
+                <RibbonSeparator.OpacityMask>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.OpacityMask>
+            </RibbonSeparator>
+            <StackPanel Grid.Row="1" Grid.Column="1" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <RadioButton x:Name="Low" Content="Я новичок" FontSize="25"
+                                 HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                 VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" 
+                                 IsChecked="True" Foreground="White">
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        </RadioButton.RenderTransform>
+                        <RadioButton.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </RadioButton.Triggers>
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="White" Opacity="0"/>
+                        </RadioButton.Background>
+                        <RadioButton.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </RadioButton.BorderBrush>
+                    </RadioButton>
+                    <RibbonSeparator Width="55">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <RadioButton x:Name="Med" IsChecked="False" Content="Я что-то понимаю" FontSize="25" HorizontalAlignment="Left"
+                                 VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White">
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        </RadioButton.RenderTransform>
+                        <RadioButton.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </RadioButton.Triggers>
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="White" Opacity="0"/>
+                        </RadioButton.Background>
+                        <RadioButton.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </RadioButton.BorderBrush>
+                    </RadioButton>
+                    <RibbonSeparator Width="55">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <RadioButton x:Name="High" Content="Я профессионал" FontSize="25" VerticalAlignment="Center" 
+                                 HorizontalAlignment="Left" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White">
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        </RadioButton.RenderTransform>
+                        <RadioButton.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave" >
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                            <DoubleAnimation.EasingFunction>
+                                                <QuarticEase />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </RadioButton.Triggers>
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="White" Opacity="0"/>
+                        </RadioButton.Background>
+                        <RadioButton.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </RadioButton.BorderBrush>
+                    </RadioButton>
                 </StackPanel>
+                <RibbonSeparator Height="35">
+                    <RibbonSeparator.OpacityMask>
+                        <SolidColorBrush Color="Black" Opacity="0"/>
+                    </RibbonSeparator.OpacityMask>
+                </RibbonSeparator>
+                <Button Content="Продолжить" Height="35" Width="150" FontSize="20" Click="Continue_Click" Margin="0,40,0,0"
+                            FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White">
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
         </StackPanel>
     </Grid>

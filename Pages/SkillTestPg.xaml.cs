@@ -1,4 +1,4 @@
-﻿using DiplomKapustinMaximISP_41.Classes;
+﻿using AdditionalLibrary.Classes;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -10,22 +10,21 @@ namespace DiplomKapustinMaximISP_41.Pages
         {
             InitializeComponent();
         }
-
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-            if ((bool)Low.IsChecked)
+            if (Low.IsChecked.HasValue && Low.IsChecked.Value)
             {
-                Helper.SkillLevel = Helper.Skill.Low;
+                PagesHelper.SkillLevel = PagesHelper.Skill.Low;
             }
-            else if ((bool)Med.IsChecked)
+            else if (Med.IsChecked.HasValue && Med.IsChecked.Value)
             {
-                Helper.SkillLevel = Helper.Skill.Medium;
+                PagesHelper.SkillLevel = PagesHelper.Skill.Medium;
             }
-            else if ((bool)High.IsChecked)
+            else if (High.IsChecked.HasValue && High.IsChecked.Value)
             {
-                Helper.SkillLevel = Helper.Skill.High;
+                PagesHelper.SkillLevel = PagesHelper.Skill.High;
             }
-            Helper.Navigate("BaseCoursePg");
+            PagesHelper.GetTo("BaseCoursePg");
         }
     }
 }

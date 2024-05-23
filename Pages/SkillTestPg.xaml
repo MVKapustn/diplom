@@ -39,7 +39,7 @@
                     <RadioButton x:Name="Low" Content="Я новичок" FontSize="25"
                                  HorizontalAlignment="Left" VerticalAlignment="Center" 
                                  VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" 
-                                 IsChecked="True" Foreground="White">
+                                 IsChecked="True" Foreground="White" Cursor="Hand">
                         <RadioButton.RenderTransform>
                             <ScaleTransform ScaleX="1" ScaleY="1"/>
                         </RadioButton.RenderTransform>
@@ -90,7 +90,7 @@
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
                     <RadioButton x:Name="Med" IsChecked="False" Content="Я что-то понимаю" FontSize="25" HorizontalAlignment="Left"
-                                 VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White">
+                                 VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White" Cursor="Hand">
                         <RadioButton.RenderTransform>
                             <ScaleTransform ScaleX="1" ScaleY="1"/>
                         </RadioButton.RenderTransform>
@@ -141,7 +141,7 @@
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
                     <RadioButton x:Name="High" Content="Я профессионал" FontSize="25" VerticalAlignment="Center" 
-                                 HorizontalAlignment="Left" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White">
+                                 HorizontalAlignment="Left" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White" Cursor="Hand">
                         <RadioButton.RenderTransform>
                             <ScaleTransform ScaleX="1" ScaleY="1"/>
                         </RadioButton.RenderTransform>
@@ -193,7 +193,7 @@
                     </RibbonSeparator.OpacityMask>
                 </RibbonSeparator>
                 <Button Content="Продолжить" Height="35" Width="150" FontSize="20" Click="Continue_Click" Margin="0,40,0,0"
-                            FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White">
+                            FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Cursor="Hand">
                     <Button.BorderBrush>
                         <SolidColorBrush Color="#FF707070" Opacity="0"/>
                     </Button.BorderBrush>

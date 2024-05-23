@@ -7,18 +7,44 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BaseTestPg">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,120,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <TextBlock  Text="Удачи" Margin="0,180,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Cambria"/>
-        <Button Content="Начать" Margin="0,0,0,20" Height="25" Width="180" FontSize="15" VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Cambria"/>
-        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600"/>
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,120,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <Button Content="Начать" Margin="0,0,0,20" Height="30" Width="130" FontSize="20" 
+                VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" 
+                Background="Black" Foreground="White" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>       
+        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White"/>
     </Grid>
 </Page>

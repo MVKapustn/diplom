@@ -25,12 +25,12 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TabControl x:Name="tabControlLow" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="White" BorderBrush="Black">
+        <TabControl x:Name="tabControlLow" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="Black" BorderBrush="Black" Cursor="Arrow">
             <TabControl.Background>
                 <SolidColorBrush Color="#FF00CC6C" Opacity="0.5"/>
             </TabControl.Background>
-            <TabItem Header="О курсе" Width="70" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="О курсе" Width="70" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -54,8 +54,8 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№1" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="№1" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <StackPanel>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
@@ -102,8 +102,8 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№2" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="№2" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <StackPanel>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
@@ -160,15 +160,15 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№3" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="№3" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <StackPanel>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria" Text="Типы данных в языках программирования. Типы данных в C++." Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Типы данных в языках программирования. Типы данных в C++." Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -208,8 +208,8 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№4" Width="50" FontFamily="Cambria" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="№4" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <StackPanel>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
@@ -273,15 +273,15 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
-                <ScrollViewer>
+            <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
                     <StackPanel>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Cambria" Text="Условные конструкции (if, else)." Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Условные конструкции (if, else)." Foreground="White"/>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -340,21 +340,22 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black">
+            <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
                 <StackPanel VerticalAlignment="Center">
-                    <RibbonSeparator Height="20">
+                    <RibbonSeparator Height="20" Cursor="Arrow">
                         <RibbonSeparator.OpacityMask>
                             <SolidColorBrush Color="Black" Opacity="0"/>
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White"/>
-                    <RibbonSeparator Height="20">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White" Cursor="Arrow"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0" FontSize="24" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Нажмите на кнопку ниже, когда дочитаете весь материал. Дальше будет тест ваших знаний." Foreground="White" TextAlignment="Center" Cursor="Arrow"/>
+                    <RibbonSeparator Height="20" Cursor="Arrow">
                         <RibbonSeparator.OpacityMask>
                             <SolidColorBrush Color="Black" Opacity="0"/>
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
-                    <Button Content="Перейти к тесту" Height="35" Width="150" FontSize="20"
-                    FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White">
+                    <Button Content="Перейти к тесту" Height="35" Width="180" FontSize="20"
+                    FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
                         <Button.BorderBrush>
                             <SolidColorBrush Color="#FF707070" Opacity="0"/>
                         </Button.BorderBrush>

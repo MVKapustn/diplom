@@ -13,27 +13,67 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
         <StackPanel Grid.Row="1">
             <Label            
                 Content="Выберите свой файл с тестом или нажмите Базовое тестирование" 
                 FontSize="25" 
                 Grid.Row="1" 
                 VerticalAlignment="Center" 
-                HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Cambria"
+                HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"
             />
             <Label            
                 Content=" для прохождения встроенного теста" 
                 FontSize="25" 
                 Grid.Row="1" 
                 VerticalAlignment="Center" 
-                HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Cambria"
+                HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"
             />
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
-            <Button Content="Базовое тестирование" Grid.Row="1" Height="25" Width="180" FontSize="15" VerticalAlignment="Bottom" Click="BaseCourse_Click" FontFamily="Cambria"/>
-            <RibbonSeparator Width="10"/>
-            <Button Content="Выбрать файл с тестом" Background="Red" Grid.Row="1" Height="25" Width="180" FontSize="15" VerticalAlignment="Bottom" FontFamily="Cambria" IsEnabled="False"/>
-
+            <Button Content="Базовое тестирование" Grid.Row="1" Height="30" Width="240" FontSize="20" VerticalAlignment="Bottom" Click="BaseCourse_Click" FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Cursor="Hand">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                </Button.BorderBrush>
+            </Button>
+            <RibbonSeparator Width="10">
+                <RibbonSeparator.OpacityMask>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.OpacityMask>
+                <RibbonSeparator.Foreground>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.Foreground>
+            </RibbonSeparator>
+            <Button Content="Выбрать файл с тестом" Background="Black" Grid.Row="1" Height="30" Width="250" FontSize="20" VerticalAlignment="Bottom" FontFamily="Franklin Gothic Medium" Foreground="White" Cursor="Hand">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                </Button.BorderBrush>
+            </Button>
         </StackPanel>
     </Grid>
 </Page>

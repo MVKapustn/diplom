@@ -14,9 +14,34 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock  Text="Результаты" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <TextBlock  x:Name="ResultsTB" Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <Button Content="Вернуться на начальную страницу" Margin="0,0,0,20" Height="25" Width="260" FontSize="15" VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Cambria"/>
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <TextBlock  Text="Результаты" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <TextBlock  x:Name="ResultsTB" Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <Button Content="Вернуться на начальную страницу" Margin="0,0,0,20" Height="30" Width="370" FontSize="20" VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" Cursor="Hand" Background="Black" Foreground="White">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600"/>
     </Grid>
 </Page>

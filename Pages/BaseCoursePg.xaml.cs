@@ -27,9 +27,8 @@ namespace DiplomKapustinMaximISP_41.Pages
                     tabControlHigh.IsEnabled = true;
                     break;
             }
-        }       
-
-        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        }   
+        private void Continue_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             PagesHelper.GetTo("TestChoosingPg");
         }

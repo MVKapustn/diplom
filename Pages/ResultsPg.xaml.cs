@@ -19,19 +19,19 @@ namespace DiplomKapustinMaximISP_41.Pages
 
             if (progressBar.Value < 50)
             {
-                progressBar.Foreground = Brushes.Red;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x53, 0x09)); ;
             }
             else if (progressBar.Value > 50 && progressBar.Value < 70)
             {
-                progressBar.Foreground = Brushes.Orange;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x9C, 0x09)); ;
             }
             else if (progressBar.Value > 70 && progressBar.Value < 85)
             {
-                progressBar.Foreground = Brushes.Yellow;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xD6, 0xD9, 0x0D));
             }
             else if (progressBar.Value > 85)
             {
-                progressBar.Foreground = Brushes.Green;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xB2, 0xFF, 0x00));
             }
         }
 

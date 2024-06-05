@@ -17,11 +17,10 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
             bool isAnyPressed = falseRB1.IsChecked.Value || trueRB1.IsChecked.Value;
             if (!isAnyPressed)
             {
-                _ = MessageBox.Show("Сперва Вам нужно ответить!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                CustomMessageBoxWindow.Show(owner: PagesHelper.MainWindow, message: "Сперва Вам нужно ответить!", title: "Ошибка!");
                 return;
             }
-            Debug.WriteLine(trueRB1.IsChecked.Value);
-
+            //Debug.WriteLine(trueRB1.IsChecked.Value);
             BaseTestHelper.SaveAnswer(PagesHelper.Skill.Low, 4, trueRB1.IsChecked.Value);
             PagesHelper.GetTo("BaseTestPgs/BaseTestPg6");
         }

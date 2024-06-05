@@ -13,15 +13,136 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock  Text="Вопрос №4" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"/>
-        <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" TextWrapping="WrapWithOverflow" FontFamily="Cambria" TextAlignment="Center"><Run Text="Можно ли"/><Run Text=" "/><Run Text="в"/><Run Text=" С++ создать переменную и сразу "/><Run Language="ru-ru" Text="присвоить в неё"/><Run Text=" значение с клавиатуры "/><Run Text="(в рамках одной команды)"/><Run Text="?"/></TextBlock>
+        <Frame Grid.RowSpan="3">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Вопрос №"/><Run Language="ru-ru" Text="4"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <TextBlock Margin="0,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Можно ли в С++ создать переменную и сразу присвоить в неё значение с клавиатуры        (Например, как в Python: str = input())?"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
-            <RadioButton x:Name="falseRB1" Content="Можно" VerticalContentAlignment="Center" FontSize="15"/>
-            <RibbonSeparator Width="20"/>
-            <RadioButton Content="Нельзя" VerticalContentAlignment="Center" FontSize="15" x:Name="trueRB1"/>
-            <RibbonSeparator Width="20"/>
+            <RadioButton x:Name="falseRB1" Content="Можно" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </RadioButton.RenderTransform>
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="MouseLeave" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+                <RadioButton.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </RadioButton.Background>
+                <RadioButton.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                </RadioButton.BorderBrush>
+            </RadioButton>
+            <RibbonSeparator Width="20">
+                <RibbonSeparator.OpacityMask>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.OpacityMask>
+            </RibbonSeparator>
+            <RadioButton Content="Нельзя" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </RadioButton.RenderTransform>
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="MouseLeave" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+                <RadioButton.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </RadioButton.Background>
+                <RadioButton.BorderBrush>
+                    <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                </RadioButton.BorderBrush>
+            </RadioButton>
+            <RibbonSeparator Width="20">
+                <RibbonSeparator.OpacityMask>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.OpacityMask>
+            </RibbonSeparator>
         </StackPanel>
-        <Button Content="Продолжить" Margin="0,0,0,20" Height="25" Width="180" FontSize="15" VerticalAlignment="Bottom" Click="Continue_Click" FontFamily="Cambria"/>
-        <ProgressBar Grid.Row="1" Width="600" Value="80"/>
+        <Button Content="Продолжить" Margin="0,0,0,20" Height="30" Width="160" FontSize="20" VerticalAlignment="Bottom" Click="Continue_Click" FontFamily="Franklin Gothic Medium" Foreground="White" Background="Black" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White" Value="80"/>
     </Grid>
 </Page>

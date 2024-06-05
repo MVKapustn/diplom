@@ -24,7 +24,7 @@ namespace DiplomKapustinMaximISP_41.Pages
             {
                 PagesHelper.SkillLevel = PagesHelper.Skill.High;
             }
-            PagesHelper.GetTo("BaseCoursePg");
+            PagesHelper.GetTo("BaseCoursePg");            
         }
     }
 }

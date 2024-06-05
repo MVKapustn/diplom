@@ -30,8 +30,10 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock  Text="Вопрос №1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="C++ это "/><Run Language="ru-ru" Text="компилируемый, ... типизированный язык программирования"/><Run Text="."/></TextBlock>
+        <TextBlock Text="Вопрос №1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow"
+                   FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" 
+                   Text="C++ это компилируемый, ... типизированный язык программирования."/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
             <RadioButton x:Name="falseRB1" Content="Динамически" VerticalContentAlignment="Center" FontSize="20" FontFamily="Franklin Gothic Medium" Foreground="White">
                 <RadioButton.RenderTransform>
@@ -190,6 +192,5 @@
             </Button.BorderBrush>
         </Button>
         <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White" Value="20"/>
-
     </Grid>
 </Page>

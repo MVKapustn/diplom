@@ -30,7 +30,7 @@ namespace DiplomKapustinMaximISP_41.Pages
         }   
         private void Continue_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            PagesHelper.GetTo("TestChoosingPg");
+            PagesHelper.GetTo("BaseTestPgs/BaseTestPg1");
         }
     }
 }

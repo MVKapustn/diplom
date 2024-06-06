@@ -9,6 +9,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
         public BaseTestPg2()
         {
             InitializeComponent();
+            progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.Skill.Low);
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)

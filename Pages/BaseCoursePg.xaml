@@ -7,7 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BaseCoursePg" Initialized="Page_Initialized">
-
     <Grid>
         <Frame Grid.RowSpan="3">
             <Frame.Background>
@@ -138,7 +137,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	3) Множество библиотек и фреймворков, позволяющих создавать различные типы приложений."
                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -163,7 +162,7 @@
             <TabItem Header="№3" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
                 <ScrollViewer Cursor="Arrow">
                     <StackPanel>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -186,12 +185,12 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                                  Text="        	 В C++ существует множество различных типов данных, каждый из которых предназначен для хранения определенного вида информации. Некоторые из основных типов данных в C++ включают целочисленные типы (int, short, long), типы с плавающей запятой (float, double), символьные типы (char), логический тип (bool) и другие. Типы данных в C++ не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными."	                                        
                                  TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/cppCode.png" Width="500" Height="350" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/cppCode.png" Width="500" Height="410" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -211,14 +210,14 @@
             <TabItem Header="№4" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
                 <ScrollViewer Cursor="Arrow">
                     <StackPanel>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
                                    TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Ввод - вывод данных (cin, cout)" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -229,12 +228,12 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                                  Text="          Пример ввода данных в C++ с использованием cin:"
                                  TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/cinCode.png" Width="533" Height="240" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/cinCode.png" Width="573" Height="240" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -243,7 +242,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                                 Text="        	Рисунок 4. Листинг кода C++ с вводом данных"	                                        
                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -251,12 +250,12 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                                 Text="         	Пример вывода данных в C++ с использованием cout:"
                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/coutCode.png" Width="533" Height="170" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/coutCode.png" Width="593" Height="170" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -265,7 +264,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                                  Text="        	Рисунок 5. Листинг кода C++ с выводом данных"	                                        
                                  TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -276,13 +275,13 @@
             <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
                 <ScrollViewer Cursor="Arrow">
                     <StackPanel>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Условные конструкции (if, else)." Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Условные конструкции (if, else)" Foreground="White"/>
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -290,7 +289,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                                  Text="          Условные конструкции в C++ позволяют программе принимать решения на основе определенных условий. В языке C++ существует лишь два условных оператора: if и else, однако их комбинации позволяют производить достаточно сложные ветвления, такие как if-else или if-else-if-else:"
                                  TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -304,12 +303,12 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                                 Text="        	Рисунок 6. Листинг кода C++ с оператором If"	                                        
                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/ifElseCode.png" Width="533" Height="270" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/ifElseCode.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -318,12 +317,12 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                                 Text="        	Рисунок 7. Листинг кода C++ с операторами If - Else"	                                        
                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/IfElseIfElseCode.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/IfElseIfElseCode.png" Width="533" Height="370" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -332,7 +331,110 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
                                 Text="        	Рисунок 8. Листинг кода C++ с операторами If - Else - If - Else"	                                        
                                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№6" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Конструкция switch-case" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Конструкция switch-case позволяет сравнить которое выражение с набором значений. После ключегового слова switch в скобках идёт сравниваемое выражение. Значение этого выражения последовательно сравнивается со значениями после оператора case. И если совпадение будет найдено, то будет выполняться определённый case. Конструкция имеет следующий вид:"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/switch_case.png" Width="533" Height="670" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 9. Листинг кода C++ с оператором switch-case"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>                        
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№7" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Циклические нструкции (for, while)" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Циклы являются управляющими конструкциями, которые позволяют взависимости от определённых условий повторять определённое количество раз указанные в них действия. В C++ имеется четыре вида циклов: for, while, do-while и range-based for. На данном курсе пойдёт речь о первых двух: for и while."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Цикл for - это вид цикла, предназначенный для алгоритмов, в которых имеется необходимость в определённом количестве повторений (10, 20, 1000 и пр.) Синтаксис цикла состоит из заголовка for (итерационная переменная; условие повторения цикла; действия над итерационной переменной) и тела цикла, т.е. всё написанное в фигурных скобках."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/for_loop.png" Width="500" Height="115" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 10. Листинг кода C++ с циклической конструкцией for"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          В отличие от цикла for, в while нет синтаксиса для выделения лимитов повторения цикла, имеется лишь условие повторения. По сути, цикл while представляет из себя тот же условный оператор if, только в отличие от оного, он выполняется не один раз, а до тех пор, пока верно условие. Соответственно, синтаксис цикла состоит из заголовка с условием и тела цикла."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/while_loop.png" Width="600" Height="175" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 11. Листинг кода C++ с циклической конструкцией while"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -342,14 +444,14 @@
             </TabItem>
             <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
                 <StackPanel VerticalAlignment="Center">
-                    <RibbonSeparator Height="20" Cursor="Arrow">
+                    <RibbonSeparator Height="10" Cursor="Arrow">
                         <RibbonSeparator.OpacityMask>
                             <SolidColorBrush Color="Black" Opacity="0"/>
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White" Cursor="Arrow"/>
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0" FontSize="24" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Нажмите на кнопку ниже, когда дочитаете весь материал. Дальше будет тест ваших знаний." Foreground="White" TextAlignment="Center" Cursor="Arrow"/>
-                    <RibbonSeparator Height="20" Cursor="Arrow">
+                    <RibbonSeparator Height="10" Cursor="Arrow">
                         <RibbonSeparator.OpacityMask>
                             <SolidColorBrush Color="Black" Opacity="0"/>
                         </RibbonSeparator.OpacityMask>
@@ -368,8 +470,7 @@
                 </StackPanel>
             </TabItem>
         </TabControl>
-        <TabControl x:Name="tabControlMed" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35" Visibility="Hidden" IsEnabled="False"></TabControl>
+        <TabControl x:Name="tabControlMed" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35" Visibility="Hidden" IsEnabled="False" Panel.ZIndex="10"/>
         <TabControl x:Name="tabControlHigh" Width="770" HorizontalAlignment="Center" Margin="0,35,0,35" Visibility="Hidden" IsEnabled="False"></TabControl>
-
     </Grid>
 </Page>

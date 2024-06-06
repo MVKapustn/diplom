@@ -11,10 +11,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Frame Grid.RowSpan="3">
+        <Frame>
             <Frame.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <LinearGradientBrush.RelativeTransform>
@@ -30,11 +28,11 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,120,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <Button Content="Начать" Margin="0,0,0,20" Height="30" Width="130" FontSize="20" 
-                VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" 
+        <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,150,0,0" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="27" Width="488"/>
+        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="36" Width="794"/>
+        <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,246,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="18" Width="696"/>
+        <Button Content="Начать" Margin="0,340,0,0" Height="30" Width="120" FontSize="20" 
+                VerticalAlignment="Top" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" 
                 Background="Black" Foreground="White" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="Border">
@@ -44,7 +42,6 @@
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
             </Button.BorderBrush>
-        </Button>       
-        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White"/>
+        </Button>
     </Grid>
 </Page>

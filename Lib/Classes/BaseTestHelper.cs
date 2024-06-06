@@ -2,9 +2,20 @@
 {
     public static class BaseTestHelper
     {
-        private static bool[] lowDifficult = new bool[5];
+        private static bool[] lowDifficult = new bool[6];
         private static bool[] medDifficult = new bool[7];
-        private static bool[] highDifficult = new bool[10];        
+        private static bool[] highDifficult = new bool[10];
+        private static double progressBarStatus = 0;
+
+        public static double CalculateProgressBarStatus(PagesHelper.Skill questionDifficult)
+        {
+            return questionDifficult switch
+            {
+                PagesHelper.Skill.Low => progressBarStatus / lowDifficult.Length * 100,
+                PagesHelper.Skill.Medium => progressBarStatus / medDifficult.Length * 100,
+                PagesHelper.Skill.High => progressBarStatus / highDifficult.Length * 100
+            };
+        }
 
         public static void SaveAnswer(PagesHelper.Skill questionDifficult, int questionNumber, bool answer)
         {
@@ -21,6 +32,7 @@
                     highDifficult[questionNumber] = answer;
                     break;
             }
+            progressBarStatus++;
         }
         public static (int, int) GetResults(PagesHelper.Skill difficult)
         {

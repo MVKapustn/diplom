@@ -7,24 +7,10 @@ namespace DiplomKapustinMaximISP_41
     {
         public MainWindow()
         {
-            InitializeComponent();            
-
+            InitializeComponent();          
             PagesHelper.MWFrame = mainFrame;
             PagesHelper.MainWindow = this;
-
             mainFrame.Navigate(new Uri("Pages/GreetingsPg.xaml", UriKind.Relative));
-
-            /*// Возврат на предыдущую страницу
-            if (mainFrame.CanGoBack)
-            {
-                mainFrame.GoBack();
-            }
-
-            // Переход на следующую страницу в истории переходов
-            if (mainFrame.CanGoForward)
-            {
-                mainFrame.GoForward();
-            }*/
         }
     }
 }

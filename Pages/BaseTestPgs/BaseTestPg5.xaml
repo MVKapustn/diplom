@@ -40,12 +40,12 @@
                     <EventTrigger RoutedEvent="MouseEnter" >
                         <BeginStoryboard>
                             <Storyboard>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.1" Duration="0:0:.4">
                                     <DoubleAnimation.EasingFunction>
                                         <QuarticEase />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.1" Duration="0:0:.4" >
                                     <DoubleAnimation.EasingFunction>
                                         <QuarticEase />
                                     </DoubleAnimation.EasingFunction>
@@ -90,12 +90,12 @@
                     <EventTrigger RoutedEvent="MouseEnter" >
                         <BeginStoryboard>
                             <Storyboard>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.3" Duration="0:0:.4">
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.1" Duration="0:0:.4">
                                     <DoubleAnimation.EasingFunction>
                                         <QuarticEase />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.3" Duration="0:0:.4" >
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.1" Duration="0:0:.4" >
                                     <DoubleAnimation.EasingFunction>
                                         <QuarticEase />
                                     </DoubleAnimation.EasingFunction>
@@ -143,6 +143,6 @@
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White" Value="80"/>
+        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="600" Foreground="#FF00FF87" Background="White"/>
     </Grid>
 </Page>

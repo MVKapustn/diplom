@@ -1,19 +1,17 @@
 ﻿using AdditionalLibrary.Classes;
-using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
 {    
-    public partial class BaseTestPg6 : Page
+    public partial class BaseTestPg7 : Page
     {
-        public BaseTestPg6()
+        public BaseTestPg7()
         {
             InitializeComponent();
             progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.Skill.Low);
         }
-
-        private void Continue_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Continue_Click(object sender, RoutedEventArgs e)
         {
             bool isAnyPressed = falseRB1.IsChecked.Value || falseRB2.IsChecked.Value || trueRB1.IsChecked.Value;
             if (!isAnyPressed)
@@ -22,8 +20,8 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
                 return;
             }
             //Debug.WriteLine(trueRB1.IsChecked.Value);
-            BaseTestHelper.SaveAnswer(PagesHelper.Skill.Low, 5, trueRB1.IsChecked.Value);
-            PagesHelper.GetTo("BaseTestPgs/BaseTestPg7");
+            BaseTestHelper.SaveAnswer(PagesHelper.Skill.Low, 6, trueRB1.IsChecked.Value);
+            PagesHelper.GetTo("ResultsPg"/*"BaseTestPgs/BaseTestPg8"*/);
         }
     }
 }

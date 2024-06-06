@@ -22,17 +22,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Images\6thquestFalse1.png" />
+    <None Remove="Images\6thquestFalse2.png" />
+    <None Remove="Images\6thquestTrue.png" />
     <None Remove="Images\cinCode.png" />
     <None Remove="Images\coutCode.png" />
     <None Remove="Images\cpp.png" />
     <None Remove="Images\cppCode.png" />
+    <None Remove="Images\for_loop.png" />
     <None Remove="Images\ifCode.png" />
     <None Remove="Images\ifElseCode.png" />
     <None Remove="Images\ifElseIfElseCode.png" />
     <None Remove="Images\languages.jpg" />
+    <None Remove="Images\switch_case.png" />
     <None Remove="Images\testIf1.bmp" />
     <None Remove="Images\testIf2.bmp" />
     <None Remove="Images\testIf3.bmp" />
+    <None Remove="Images\while_loop.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +50,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\6thquestFalse1.png" />
+    <Resource Include="Images\6thquestFalse2.png" />
+    <Resource Include="Images\6thquestTrue.png" />
     <Resource Include="Images\cinCode.png" />
     <Resource Include="Images\coutCode.png" />
     <Resource Include="Images\cpp.png" />
@@ -52,9 +61,12 @@
     <Resource Include="Images\ifElseCode.png" />
     <Resource Include="Images\ifElseIfElseCode.png" />
     <Resource Include="Images\languages.jpg" />
+    <Resource Include="Images\for_loop.png" />
+    <Resource Include="Images\switch_case.png" />
     <Resource Include="Images\testIf1.bmp" />
     <Resource Include="Images\testIf2.bmp" />
     <Resource Include="Images\testIf3.bmp" />
+    <Resource Include="Images\while_loop.png" />
   </ItemGroup>
 
 </Project>

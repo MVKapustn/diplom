@@ -29,16 +29,16 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock  Text="Вопрос №5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,200" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,150" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Выберите номер картинки с верным синтаксисом"/><Run Language="ru-ru" Text=" условных операторов:"/></TextBlock>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0">
-            <Image Source="/Images/testIf1.bmp" Width="200" Height="100" HorizontalAlignment="Center" Stretch="Fill"/>
+        <TextBlock  Text="Вопрос №5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,300" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <TextBlock Margin="0,0,0,250" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Выберите номер картинки с верным синтаксисом"/><Run Language="ru-ru" Text=" условных операторов:"/></TextBlock>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Image Source="/Images/testIf1.png" Width="250" Height="180" HorizontalAlignment="Center" Stretch="Fill"/>
             <RibbonSeparator Width="10" Opacity="0"/>
-            <Image Source="/Images/testIf2.bmp" Width="300" Height="100" HorizontalAlignment="Center" Stretch="Fill"/>
+            <Image Source="/Images/testIf2.png" Width="280" Height="80" HorizontalAlignment="Center" Stretch="Fill"/>
             <RibbonSeparator Width="10" Opacity="0"/>
-            <Image Source="/Images/testIf3.bmp" Width="200" Height="100" HorizontalAlignment="Center" Stretch="Fill"/>
+            <Image Source="/Images/testIf3.png" Width="210" Height="190" HorizontalAlignment="Center" Stretch="Fill"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
             <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>

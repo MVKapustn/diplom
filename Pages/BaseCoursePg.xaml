@@ -46,9 +46,9 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Ввведение в массивы."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="2) Указатели."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="3) Продвинутые циклы (range-based for, do-while)."/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Обработка исключений (try-catch)."/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Контейнер vector."/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Написание собственных функций."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Контейнер vector."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Написание собственных функций."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Перечисления и объединения (enum, union)."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Ключевое слово return, необязательные параметры функций."/></TextBlock>
                     </Grid>
                 </ScrollViewer>
@@ -68,33 +68,34 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        Массивы представляют собой структуру данных, которая позволяет хранить набор элементов одного типа под одним именем. Они широко используются в программировании для организации и управления данными."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/><TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        Применение массивов:"
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        Массивы представляют собой структуру данных, которая позволяет хранить набор элементов одного типа под одним именем. Они широко используются в программировании для организации и управления данными."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        Массивы позволяют хранить множество элементов одного типа под одним именем, что облегчает доступ к данным и их обработку;"
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        Назначение массивов:"
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        Они могут быть использованы для хранения данных различных типов, таких как числа, строки, объекты и другие массивы."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        1) Массивы позволяют хранить множество элементов одного типа под одним именем, что облегчает доступ к данным и их обработку;"
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        Массивы обеспечивают удобный доступ к элементам по их индексам, что позволяет эффективно управлять данными."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        2) Могут быть использованы для хранения данных различных типов, таких как числа, строки, объекты и другие массивы."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+            Text="        3) Массивы обеспечивают удобный доступ к элементам по их индексам, что позволяет эффективно управлять данными."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="20">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/arrays.png" Width="533" Height="150" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/arrays.png" Width="533" Height="220" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                    Text="        	Рисунок 1. Разнообразие языков программирования"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+            Text="        	Рисунок 1. Массивы в C++."	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -112,47 +113,38 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1"
-                           TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Что такое C++? Сферы применения и достоинства."  Foreground="White"/>
+                   TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Указатели."  Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          C++ (читается си-плюс-плюс) — компилируемый, статически типизированный язык программирования общего назначения."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Указатель в C++ — это переменная, значением которой является адрес ячейки памяти."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование. Язык имеет богатую стандартную библиотеку, которая включает в себя распространённые контейнеры и алгоритмы, ввод-вывод, регулярные выражения, поддержку многопоточности и другие возможности. C++ сочетает свойства как высокоуровневых, так и низкоуровневых языков. В сравнении с его предшественником — языком C — наибольшее внимание уделено поддержке объектно-ориентированного и обобщённого программирования."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Указатели используются для передачи по ссылке данных, что ускоряет процесс их обработки (особенно при большом объёме). Также они применяются для организации динамического распределения памяти."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          C++ широко используется для разработки программного обеспечения, являясь одним из самых популярных языков программирования. Область его применения включает создание операционных систем, разнообразных прикладных программ, драйверов устройств, приложений для встраиваемых систем, высокопроизводительных серверов, а также компьютерных игр. Существует множество реализаций языка C++, как бесплатных, так и коммерческих и для различных платформ. Например, на платформе x86 это GCC, Clang, Visual C++, Intel C++ Compiler, Embarcadero (Borland) C++ Builder и другие. C++ оказал огромное влияние на другие языки программирования, в первую очередь на Java и C#."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Перед использованием указатель необходимо объявить, как и любую переменную. Перед именем ставится символ звёздочки *."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        	Преимущества:"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        	1) Высокая скорость выполнения и эффективное управление памятью благодаря компиляции в машинный код;"
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        	2) Широкие возможности для системного программирования, геймдева и высокопроизводительного ПО;"
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="        	3) Множество библиотек и фреймворков, позволяющих создавать различные типы приложений."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        	Чтобы получить значение, записанное в некоторой области, на которое ссылается указатель, нужно воспользоваться операцией разыменования указателя *."	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/cpp.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/pointers.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                    Text="        	Рисунок 2. Листинг кода на языке C++"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        	Рисунок 2. Указатели."	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -176,17 +168,17 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          Типы данных в языках программирования (ЯП) представляют собой способ классификации и организации данных, которые могут быть использованы в программе. Они не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными. Типы данных в ЯП являются важной концепцией, поскольку они помогают программистам:"
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          Типы данных в языках программирования (ЯП) представляют собой способ классификации и организации данных, которые могут быть использованы в программе. Они не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными. Типы данных в ЯП являются важной концепцией, поскольку они помогают программистам:"
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          1) Контролировать типы значений: Типы данных позволяют программистам контролировать типы значений, с которыми они работают, что обеспечивает безопасность и предотвращает нежелательные ошибки в программе."
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          1) Контролировать типы значений: Типы данных позволяют программистам контролировать типы значений, с которыми они работают, что обеспечивает безопасность и предотвращает нежелательные ошибки в программе."
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          2) Повышать эффективность выполнения программы, т.к правильный выбор типов данных может повысить эффективность выполнения программы, поскольку определенные типы данных могут быть более подходящими для определенных операций."
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          2) Повышать эффективность выполнения программы, т.к правильный выбор типов данных может повысить эффективность выполнения программы, поскольку определенные типы данных могут быть более подходящими для определенных операций."
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="        	 В C++ существует множество различных типов данных, каждый из которых предназначен для хранения определенного вида информации. Некоторые из основных типов данных в C++ включают целочисленные типы (int, short, long), типы с плавающей запятой (float, double), символьные типы (char), логический тип (bool) и другие. Типы данных в C++ не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными."	                                        
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="        	 В C++ существует множество различных типов данных, каждый из которых предназначен для хранения определенного вида информации. Некоторые из основных типов данных в C++ включают целочисленные типы (int, short, long), типы с плавающей запятой (float, double), символьные типы (char), логический тип (bool) и другие. Типы данных в C++ не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными."	                                        
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -199,8 +191,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                         Text="        	Рисунок 3. Листинг кода C++ с переменными"	                                        
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="        	Рисунок 3. Листинг кода C++ с переменными"	                                        
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -218,18 +210,18 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
-                           TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Ввод - вывод данных (cin, cout)" Foreground="White"/>
+                   TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Ввод - вывод данных (cin, cout)" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          В C++ ввод и вывод данных осуществляются с использованием потоков. Для вывода данных используется поток вывода (output stream), который обозначается как cout, а для ввода данных - поток ввода (input stream), обозначаемый как cin. Для работы с потоками ввода-вывода необходимо подключить заголовочный файл iostream."
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          В C++ ввод и вывод данных осуществляются с использованием потоков. Для вывода данных используется поток вывода (output stream), который обозначается как cout, а для ввода данных - поток ввода (input stream), обозначаемый как cin. Для работы с потоками ввода-вывода необходимо подключить заголовочный файл iostream."
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          Пример ввода данных в C++ с использованием cin:"
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          Пример ввода данных в C++ с использованием cin:"
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -242,16 +234,16 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                        Text="        	Рисунок 4. Листинг кода C++ с вводом данных"	                                        
-                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                Text="        	Рисунок 4. Листинг кода C++ с вводом данных"	                                        
+                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                        Text="         	Пример вывода данных в C++ с использованием cout:"
-                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                Text="         	Пример вывода данных в C++ с использованием cout:"
+                TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -264,8 +256,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                         Text="        	Рисунок 5. Листинг кода C++ с выводом данных"	                                        
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                 Text="        	Рисунок 5. Листинг кода C++ с выводом данных"	                                        
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -289,8 +281,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                         Text="          Условные конструкции в C++ позволяют программе принимать решения на основе определенных условий. В языке C++ существует лишь два условных оператора: if и else, однако их комбинации позволяют производить достаточно сложные ветвления, такие как if-else или if-else-if-else:"
-                         TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                 Text="          Условные конструкции в C++ позволяют программе принимать решения на основе определенных условий. В языке C++ существует лишь два условных оператора: if и else, однако их комбинации позволяют производить достаточно сложные ветвления, такие как if-else или if-else-if-else:"
+                 TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -303,8 +295,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                        Text="        	Рисунок 6. Листинг кода C++ с оператором If"	                                        
-                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                Text="        	Рисунок 6. Листинг кода C++ с оператором If"	                                        
+                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -317,8 +309,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                        Text="        	Рисунок 7. Листинг кода C++ с операторами If - Else"	                                        
-                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                Text="        	Рисунок 7. Листинг кода C++ с операторами If - Else"	                                        
+                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -331,8 +323,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                        Text="        	Рисунок 8. Листинг кода C++ с операторами If - Else - If - Else"	                                        
-                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                Text="        	Рисунок 8. Листинг кода C++ с операторами If - Else - If - Else"	                                        
+                TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -356,22 +348,22 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          Конструкция switch-case позволяет сравнить которое выражение с набором значений. После ключегового слова switch в скобках идёт сравниваемое выражение. Значение этого выражения последовательно сравнивается со значениями после оператора case. И если совпадение будет найдено, то будет выполняться определённый case. Конструкция имеет следующий вид:"
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Конструкция switch-case позволяет сравнить которое выражение с набором значений. После ключегового слова switch в скобках идёт сравниваемое выражение. Значение этого выражения последовательно сравнивается со значениями после оператора case. И если совпадение будет найдено, то будет выполняться определённый case. Конструкция имеет следующий вид:"
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
-                        <Image Source="/Images/switch_case.png" Width="533" Height="670" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <Image Source="/Images/switch-case.png" Width="533" Height="670" HorizontalAlignment="Center" Stretch="Fill"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                    Text="        	Рисунок 9. Листинг кода C++ с оператором switch-case"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        	Рисунок 9. Листинг кода C++ с оператором switch-case"	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -395,11 +387,11 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          Циклы являются управляющими конструкциями, которые позволяют взависимости от определённых условий повторять определённое количество раз указанные в них действия. В C++ имеется четыре вида циклов: for, while, do-while и range-based for. На данном курсе пойдёт речь о первых двух: for и while."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Циклы являются управляющими конструкциями, которые позволяют взависимости от определённых условий повторять определённое количество раз указанные в них действия. В C++ имеется четыре вида циклов: for, while, do-while и range-based for. На данном курсе пойдёт речь о первых двух: for и while."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          Цикл for - это вид цикла, предназначенный для алгоритмов, в которых имеется необходимость в определённом количестве повторений (10, 20, 1000 и пр.) Синтаксис цикла состоит из заголовка for (итерационная переменная; условие повторения цикла; действия над итерационной переменной) и тела цикла, т.е. всё написанное в фигурных скобках."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          Цикл for - это вид цикла, предназначенный для алгоритмов, в которых имеется необходимость в определённом количестве повторений (10, 20, 1000 и пр.) Синтаксис цикла состоит из заголовка for (итерационная переменная; условие повторения цикла; действия над итерационной переменной) и тела цикла, т.е. всё написанное в фигурных скобках."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -412,16 +404,16 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                    Text="        	Рисунок 10. Листинг кода C++ с циклической конструкцией for"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        	Рисунок 10. Листинг кода C++ с циклической конструкцией for"	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
-                    Text="          В отличие от цикла for, в while нет синтаксиса для выделения лимитов повторения цикла, имеется лишь условие повторения. По сути, цикл while представляет из себя тот же условный оператор if, только в отличие от оного, он выполняется не один раз, а до тех пор, пока верно условие. Соответственно, синтаксис цикла состоит из заголовка с условием и тела цикла."
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="          В отличие от цикла for, в while нет синтаксиса для выделения лимитов повторения цикла, имеется лишь условие повторения. По сути, цикл while представляет из себя тот же условный оператор if, только в отличие от оного, он выполняется не один раз, а до тех пор, пока верно условие. Соответственно, синтаксис цикла состоит из заголовка с условием и тела цикла."
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -434,8 +426,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                    Text="        	Рисунок 11. Листинг кода C++ с циклической конструкцией while"	                                        
-                    TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+            Text="        	Рисунок 11. Листинг кода C++ с циклической конструкцией while"	                                        
+            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -459,7 +451,7 @@
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
                     <Button Content="Перейти к тесту" Height="35" Width="180" FontSize="20"
-            FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
+    FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
                         <Button.BorderBrush>
                             <SolidColorBrush Color="#FF707070" Opacity="0"/>
                         </Button.BorderBrush>

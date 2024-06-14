@@ -9,7 +9,7 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>False</UseWindowsForms>
     <AssemblyName>$(Изучение языка С++)</AssemblyName>
-    <ApplicationIcon>Images\mimetypes_cppsource_c_341.ico</ApplicationIcon>
+    <ApplicationIcon>cpp_icon.ico</ApplicationIcon>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <StartupObject></StartupObject>
   </PropertyGroup>
@@ -25,19 +25,34 @@
     <None Remove="Images\6thquestFalse1.png" />
     <None Remove="Images\6thquestFalse2.png" />
     <None Remove="Images\6thquestTrue.png" />
+    <None Remove="Images\arrays.png" />
     <None Remove="Images\cinCode.png" />
     <None Remove="Images\coutCode.png" />
     <None Remove="Images\cpp.png" />
     <None Remove="Images\cppCode.png" />
+    <None Remove="Images\enum1.png" />
+    <None Remove="Images\enum2.png" />
     <None Remove="Images\for_loop.png" />
+    <None Remove="Images\functions.png" />
     <None Remove="Images\IfCode.png" />
     <None Remove="Images\IfElseCode.png" />
     <None Remove="Images\ifElseIfElseCode.png" />
+    <None Remove="Images\languages.png" />
+    <None Remove="Images\parameters.png" />
+    <None Remove="Images\pointers.png" />
+    <None Remove="Images\range-based_for.png" />
+    <None Remove="Images\return.png" />
     <None Remove="Images\switch-case.png" />
     <None Remove="Images\testif1.png" />
     <None Remove="Images\testif2.png" />
     <None Remove="Images\testif3.png" />
+    <None Remove="Images\union.png" />
+    <None Remove="Images\vector.png" />
     <None Remove="Images\while_loop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="cpp_icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,18 +63,29 @@
     <Resource Include="Images\6thquestFalse1.png" />
     <Resource Include="Images\6thquestFalse2.png" />
     <Resource Include="Images\6thquestTrue.png" />
+    <Resource Include="Images\arrays.png" />
     <Resource Include="Images\cinCode.png" />
     <Resource Include="Images\coutCode.png" />
     <Resource Include="Images\cpp.png" />
     <Resource Include="Images\cppCode.png" />
+    <Resource Include="Images\enum1.png" />
+    <Resource Include="Images\enum2.png" />
     <Resource Include="Images\for_loop.png" />
+    <Resource Include="Images\functions.png" />
     <Resource Include="Images\IfCode.png" />
     <Resource Include="Images\IfElseCode.png" />
     <Resource Include="Images\ifElseIfElseCode.png" />
+    <Resource Include="Images\languages.png" />
+    <Resource Include="Images\parameters.png" />
+    <Resource Include="Images\pointers.png" />
+    <Resource Include="Images\range-based_for.png" />
+    <Resource Include="Images\return.png" />
     <Resource Include="Images\switch-case.png" />
     <Resource Include="Images\testif1.png" />
     <Resource Include="Images\testif2.png" />
     <Resource Include="Images\testif3.png" />
+    <Resource Include="Images\union.png" />
+    <Resource Include="Images\vector.png" />
     <Resource Include="Images\while_loop.png" />
   </ItemGroup>
 

@@ -29,7 +29,7 @@
             </Frame.Background>
         </Frame>
         <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,150,0,0" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="27" Width="488"/>
-        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="36" Width="794"/>
+        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." VerticalAlignment="Top" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="36" Margin="3,207,3,0"/>
         <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,246,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="18" Width="696"/>
         <Button Content="Начать" Margin="0,340,0,0" Height="30" Width="120" FontSize="20" 
                 VerticalAlignment="Top" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" 

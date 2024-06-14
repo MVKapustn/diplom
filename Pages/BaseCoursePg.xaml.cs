@@ -15,16 +15,16 @@ namespace DiplomKapustinMaximISP_41.Pages
             switch (PagesHelper.SkillLevel)
             {
                 case PagesHelper.Skill.Low:
-                    tabControlLow.Visibility = System.Windows.Visibility.Visible;
-                    tabControlLow.IsEnabled = true;
+                    /*tabControlLow.Visibility = System.Windows.Visibility.Visible;
+                    tabControlLow.IsEnabled = true;*/
                     break;
                 case PagesHelper.Skill.Medium:
                     tabControlMed.Visibility = System.Windows.Visibility.Visible;
                     tabControlMed.IsEnabled = true;
                     break;
                 case PagesHelper.Skill.High:
-                    tabControlHigh.Visibility = System.Windows.Visibility.Visible;
-                    tabControlHigh.IsEnabled = true;
+                    /*tabControlHigh.Visibility = System.Windows.Visibility.Visible;
+                    tabControlHigh.IsEnabled = true;*/
                     break;
             }
         }   

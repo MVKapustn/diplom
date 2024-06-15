@@ -65,6 +65,7 @@
     <None Remove="Images\testif2.png" />
     <None Remove="Images\testif3.png" />
     <None Remove="Images\union.png" />
+    <None Remove="Images\users.ico" />
     <None Remove="Images\vector.png" />
     <None Remove="Images\while_loop.png" />
   </ItemGroup>
@@ -121,6 +122,7 @@
     <Resource Include="Images\testif2.png" />
     <Resource Include="Images\testif3.png" />
     <Resource Include="Images\union.png" />
+    <Resource Include="Images\users.ico" />
     <Resource Include="Images\vector.png" />
     <Resource Include="Images\while_loop.png" />
   </ItemGroup>

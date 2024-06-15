@@ -1,0 +1,47 @@
+﻿<Page x:Class="DiplomKapustinMaximISP_41.Pages.BaseTestPgsMed.BaseTestPgMed1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DiplomKapustinMaximISP_41.Pages.BaseTestPgsMed"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BaseTestPgMed1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Frame>
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-45" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF00D1FF" Offset="1"/>
+                    <GradientStop Color="#FF00FF87" Offset="0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <TextBlock  Text="Это окно с тестированием по базовому курсу." VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,150,0,0" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="27" Width="488"/>
+        <TextBlock  Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." VerticalAlignment="Top" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="36" Margin="3,207,3,0"/>
+        <TextBlock  Text="Ваша задача состоит в том, чтобы прочитать вопрос и выбрать один из вариантов ответа на него." Margin="0,246,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="18" Width="696"/>
+        <Button Content="Начать" Margin="0,340,0,0" Height="30" Width="120" FontSize="20" 
+            VerticalAlignment="Top" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" 
+            Background="Black" Foreground="White" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+    </Grid>
+</Page>

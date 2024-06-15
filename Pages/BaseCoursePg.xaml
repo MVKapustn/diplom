@@ -489,7 +489,7 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <TextBlock VerticalAlignment="Center" Margin="20,10,0,0" FontSize="25" Text="Для вашего уровня владения языком будет преложено пройти следующий план изучения языка C++:" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Ввведение в массивы."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Введение в массивы."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="2) Указатели."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="3) Продвинутые циклы (range-based for, do-while)."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Контейнер vector."/></TextBlock>

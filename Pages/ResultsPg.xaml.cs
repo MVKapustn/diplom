@@ -11,7 +11,7 @@ namespace DiplomKapustinMaximISP_41.Pages
         {
             InitializeComponent();
 
-            var results = BaseTestHelper.GetResults(PagesHelper.Skill.Low);
+            var results = BaseTestHelper.GetResults(PagesHelper.SkillLevel);
 
             ResultsTB.Text = $"Поздравляем! Вы набрали {results.Item1} баллов из {results.Item2} возможных!";            
 

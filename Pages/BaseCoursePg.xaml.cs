@@ -46,10 +46,21 @@ namespace DiplomKapustinMaximISP_41.Pages
                     tabControlHigh.IsEnabled = true;
                     break;
             }
-        }   
+        }
         private void Continue_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            PagesHelper.GetTo("BaseTestPgs/BaseTestPg1");
+            switch (PagesHelper.SkillLevel)
+            {
+                case PagesHelper.Skill.Low:
+                    PagesHelper.GetTo("BaseTestPgs/BaseTestPg1");
+                    break;
+                case PagesHelper.Skill.Medium:
+                    PagesHelper.GetTo("BaseTestPgsMed/BaseTestPgMed1");
+                    break;
+                case PagesHelper.Skill.High:
+                    PagesHelper.GetTo("BaseTestPgsHigh/BaseTestPgHigh1");
+                    break;
+            }
         }
     }
 }

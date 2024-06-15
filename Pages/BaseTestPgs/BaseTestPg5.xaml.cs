@@ -1,5 +1,4 @@
 ﻿using AdditionalLibrary.Classes;
-using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -10,7 +9,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
         public BaseTestPg5()
         {
             InitializeComponent();
-            progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.Skill.Low);
+            progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.SkillLevel);
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)
@@ -21,8 +20,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
                 CustomMessageBoxWindow.Show(owner: PagesHelper.MainWindow, message: "Сперва Вам нужно ответить!", title: "Ошибка!");
                 return;
             }
-            //Debug.WriteLine(trueRB1.IsChecked.Value);
-            BaseTestHelper.SaveAnswer(PagesHelper.Skill.Low, 4, trueRB1.IsChecked.Value);
+            BaseTestHelper.SaveAnswer(PagesHelper.SkillLevel, 4, trueRB1.IsChecked.Value);
             PagesHelper.GetTo("BaseTestPgs/BaseTestPg6");
         }
     }

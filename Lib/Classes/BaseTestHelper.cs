@@ -13,10 +13,10 @@
             {
                 PagesHelper.Skill.Low => progressBarStatus / lowDifficult.Length * 100,
                 PagesHelper.Skill.Medium => progressBarStatus / medDifficult.Length * 100,
-                PagesHelper.Skill.High => progressBarStatus / highDifficult.Length * 100
+                PagesHelper.Skill.High => progressBarStatus / highDifficult.Length * 100,
+                _ => throw new NotImplementedException()
             };
         }
-
         public static void SaveAnswer(PagesHelper.Skill questionDifficult, int questionNumber, bool answer)
         {
             questionNumber--;
@@ -53,7 +53,6 @@
                     correctQuestionsCount = highDifficult.Where(x => x == true).Count();
                     break;
             }
-
             return (correctQuestionsCount, totalQuestionsCount);
         }
     }

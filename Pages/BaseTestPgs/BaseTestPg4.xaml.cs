@@ -10,7 +10,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
         public BaseTestPg4()
         {
             InitializeComponent();
-            progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.Skill.Low);
+            progressBar.Value = BaseTestHelper.CalculateProgressBarStatus(PagesHelper.SkillLevel);
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)
@@ -22,7 +22,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgs
                 return;
             }
             //Debug.WriteLine(trueRB1.IsChecked.Value);
-            BaseTestHelper.SaveAnswer(PagesHelper.Skill.Low, 3, trueRB1.IsChecked.Value);
+            BaseTestHelper.SaveAnswer(PagesHelper.SkillLevel, 3, trueRB1.IsChecked.Value);
             PagesHelper.GetTo("BaseTestPgs/BaseTestPg5");
         }        
     }

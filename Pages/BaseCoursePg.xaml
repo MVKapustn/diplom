@@ -24,6 +24,452 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
+        <TabControl x:Name="tabControlLow" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="Black" BorderBrush="Black" Cursor="Arrow" Margin="0,10,0,10">
+            <TabControl.Background>
+                <SolidColorBrush Color="#FF00CC6C" Opacity="0.5"/>
+            </TabControl.Background>
+            <TabItem Header="О курсе" Width="70" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock VerticalAlignment="Center" Margin="20,10,0,0" FontSize="25" Text="Для вашего уровня владения языком будет преложено пройти следующий план изучения языка C++:" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Что такое язык программирования?"/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="2) Что такое C++? Сферы применения и достоинства."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="3) Типы данных в языках программирования. Типы данных в C++."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Ввод-вывод данных (cin, cout)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Условные конструкции (if, else)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Конструкция switch-case."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Циклические конструкции (for, while)."/></TextBlock>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№1" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Что такое язык программирования?" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Язык программирования — формальный язык, предназначенный для записи компьютерных программ. Язык программирования определяет набор лексических, синтаксических и семантических правил, определяющих внешний вид программы и действия, которые выполнит исполнитель (обычно — ЭВМ) под её управлением."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Со времени создания первых программируемых машин человечество придумало более восьми тысяч языков программирования (включая эзотерические). Каждый год их число увеличивается. Некоторыми языками умеет пользоваться только небольшое число их собственных разработчиков, другие становятся известны миллионам людей. Профессиональные программисты могут владеть несколькими языками программирования."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Язык программирования предназначен для написания компьютерных программ, которые представляют собой набор правил, позволяющих компьютеру выполнить тот или иной вычислительный процесс, организовать управление различными объектами, и т. п. Язык программирования отличается от естественных языков тем, что предназначен для управления ЭВМ, в то время как естественные языки используются, прежде всего, для общения людей между собой. Большинство языков программирования использует специальные конструкции для определения и манипулирования структурами данных и управления процессом вычислений."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Как правило, язык программирования определяется не только через спецификации стандарта языка, формально определяющие его синтаксис и семантику, но и через воплощения (реализации) стандарта — программные средства, обеспечивающие трансляцию или интерпретацию программ на этом языке; такие программные средства различаются по производителю, марке и варианту (версии), времени выпуска, полноте воплощения стандарта, дополнительным возможностям; могут иметь определённые ошибки или особенности воплощения, влияющие на практику использования языка или даже на его стандарт."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/languages.png" Width="533" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 1. Разнообразие языков программирования"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№2" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1"
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Что такое C++? Сферы применения и достоинства."  Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          C++ (читается си-плюс-плюс) — компилируемый, статически типизированный язык программирования общего назначения."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование. Язык имеет богатую стандартную библиотеку, которая включает в себя распространённые контейнеры и алгоритмы, ввод-вывод, регулярные выражения, поддержку многопоточности и другие возможности. C++ сочетает свойства как высокоуровневых, так и низкоуровневых языков. В сравнении с его предшественником — языком C — наибольшее внимание уделено поддержке объектно-ориентированного и обобщённого программирования."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          C++ широко используется для разработки программного обеспечения, являясь одним из самых популярных языков программирования. Область его применения включает создание операционных систем, разнообразных прикладных программ, драйверов устройств, приложений для встраиваемых систем, высокопроизводительных серверов, а также компьютерных игр. Существует множество реализаций языка C++, как бесплатных, так и коммерческих и для различных платформ. Например, на платформе x86 это GCC, Clang, Visual C++, Intel C++ Compiler, Embarcadero (Borland) C++ Builder и другие. C++ оказал огромное влияние на другие языки программирования, в первую очередь на Java и C#."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        	Преимущества:"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        	1) Высокая скорость выполнения и эффективное управление памятью благодаря компиляции в машинный код;"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        	2) Широкие возможности для системного программирования, геймдева и высокопроизводительного ПО;"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        	3) Множество библиотек и фреймворков, позволяющих создавать различные типы приложений."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cpp.png" Width="533" Height="350" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 2. Листинг кода на языке C++"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№3" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Типы данных в языках программирования. Типы данных в C++." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          Типы данных в языках программирования (ЯП) представляют собой способ классификации и организации данных, которые могут быть использованы в программе. Они не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными. Типы данных в ЯП являются важной концепцией, поскольку они помогают программистам:"
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          1) Контролировать типы значений: Типы данных позволяют программистам контролировать типы значений, с которыми они работают, что обеспечивает безопасность и предотвращает нежелательные ошибки в программе."
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          2) Повышать эффективность выполнения программы, т.к правильный выбор типов данных может повысить эффективность выполнения программы, поскольку определенные типы данных могут быть более подходящими для определенных операций."
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="        	 В C++ существует множество различных типов данных, каждый из которых предназначен для хранения определенного вида информации. Некоторые из основных типов данных в C++ включают целочисленные типы (int, short, long), типы с плавающей запятой (float, double), символьные типы (char), логический тип (bool) и другие. Типы данных в C++ не только определяют, какие виды данных могут быть хранены в переменных, но и указывают на операции, которые можно выполнять с этими данными."	                                        
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cppCode.png" Width="430" Height="380" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                             Text="        	Рисунок 3. Листинг кода C++ с переменными"	                                        
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№4" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Ввод - вывод данных (cin, cout)" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          В C++ ввод и вывод данных осуществляются с использованием потоков. Для вывода данных используется поток вывода (output stream), который обозначается как cout, а для ввода данных - поток ввода (input stream), обозначаемый как cin. Для работы с потоками ввода-вывода необходимо подключить заголовочный файл iostream."
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          Пример ввода данных в C++ с использованием cin:"
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/cinCode.png" Width="540" Height="260" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 4. Листинг кода C++ с вводом данных"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="         	Пример вывода данных в C++ с использованием cout:"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/coutCode.png" Width="420" Height="230" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                             Text="        	Рисунок 5. Листинг кода C++ с выводом данных"	                                        
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Условные конструкции (if, else)" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                             Text="          Условные конструкции в C++ позволяют программе принимать решения на основе определенных условий. В языке C++ существует лишь два условных оператора: if и else, однако их комбинации позволяют производить достаточно сложные ветвления, такие как if-else или if-else-if-else:"
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/ifCode.png" Width="533" Height="190" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 6. Листинг кода C++ с оператором If"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/ifElseCode.png" Width="240" Height="300" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 7. Листинг кода C++ с операторами If - Else"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/IfElseIfElseCode.png" Width="230" Height="370" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 8. Листинг кода C++ с операторами If - Else - If - Else"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№6" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Конструкция switch-case" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Конструкция switch-case позволяет сравнить которое выражение с набором значений. После ключегового слова switch в скобках идёт сравниваемое выражение. Значение этого выражения последовательно сравнивается со значениями после оператора case. И если совпадение будет найдено, то будет выполняться определённый case. Конструкция имеет следующий вид:"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/switch-case.png" Width="310" Height="370" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 9. Листинг кода C++ с оператором switch-case"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№7" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Циклические нструкции (for, while)" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Циклы являются управляющими конструкциями, которые позволяют взависимости от определённых условий повторять определённое количество раз указанные в них действия. В C++ имеется четыре вида циклов: for, while, do-while и range-based for. На данном курсе пойдёт речь о первых двух: for и while."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Цикл for - это вид цикла, предназначенный для алгоритмов, в которых имеется необходимость в определённом количестве повторений (10, 20, 1000 и пр.) Синтаксис цикла состоит из заголовка for (итерационная переменная; условие повторения цикла; действия над итерационной переменной) и тела цикла, т.е. всё написанное в фигурных скобках."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/for_loop.png" Width="550" Height="125" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 10. Листинг кода C++ с циклической конструкцией for"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          В отличие от цикла for, в while нет синтаксиса для выделения лимитов повторения цикла, имеется лишь условие повторения. По сути, цикл while представляет из себя тот же условный оператор if, только в отличие от оного, он выполняется не один раз, а до тех пор, пока верно условие. Соответственно, синтаксис цикла состоит из заголовка с условием и тела цикла."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/while_loop.png" Width="560" Height="230" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 11. Листинг кода C++ с циклической конструкцией while"	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <StackPanel VerticalAlignment="Center">
+                    <RibbonSeparator Height="10" Cursor="Arrow">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White" Cursor="Arrow"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0" FontSize="24" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Нажмите на кнопку ниже, когда дочитаете весь материал. Дальше будет тест ваших знаний." Foreground="White" TextAlignment="Center" Cursor="Arrow"/>
+                    <RibbonSeparator Height="10" Cursor="Arrow">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <Button Content="Перейти к тесту" Height="35" Width="180" FontSize="20"
+                        FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
+                        <Button.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </Button.BorderBrush>
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
         <TabControl x:Name="tabControlMed" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="Black" BorderBrush="Black" Cursor="Arrow" Margin="0,10,0,10">
             <TabControl.Background>
                 <SolidColorBrush Color="#FF00CC6C" Opacity="0.5"/>
@@ -82,7 +528,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        3) Массивы обеспечивают удобный доступ к элементам по их индексам, что позволяет эффективно управлять данными."
                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
-                        <RibbonSeparator Height="20">
+                        <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
@@ -94,8 +540,8 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
-                            Text="        	Рисунок 1. Массивы в C++."	                                        
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        Text="        	Рисунок 1. Массивы в C++."	                                        
+                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
                         <RibbonSeparator Height="5">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -113,7 +559,7 @@
                             </RibbonSeparator.OpacityMask>
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1"
-                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Указатели."  Foreground="White"/>
+                        TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Указатели."  Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -130,7 +576,7 @@
                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="        	Чтобы получить значение, записанное в некоторой области, на которое ссылается указатель, нужно воспользоваться операцией разыменования указателя *."	                                        
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -279,7 +725,7 @@
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
-                        </RibbonSeparator>                        
+                        </RibbonSeparator>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
@@ -318,7 +764,7 @@
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
                             </RibbonSeparator.OpacityMask>
-                        </RibbonSeparator>                        
+                        </RibbonSeparator>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
@@ -411,7 +857,7 @@
                         </RibbonSeparator>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
                             Text="          Ключевое слово return завершает выполнение текущей функции и возвращает управление вызывающей функции. Ключевое слово return используется в случае функций возвращаемого типа, таких как int, char, float и т.д. Использование инструкции return в функции main() успешно завершает работу программы, так как нет необходимости в передаче управления."
-                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
                         <RibbonSeparator Height="10">
                             <RibbonSeparator.OpacityMask>
                                 <SolidColorBrush Color="Black" Opacity="0"/>
@@ -477,7 +923,566 @@
                         </RibbonSeparator.OpacityMask>
                     </RibbonSeparator>
                     <Button Content="Перейти к тесту" Height="35" Width="180" FontSize="20"
-    FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
+                        FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
+                        <Button.BorderBrush>
+                            <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                        </Button.BorderBrush>
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="tabControlHigh" Width="770" HorizontalAlignment="Center" Visibility="Visible" IsEnabled="False" FontFamily="Franklin Gothic Medium" Foreground="Black" BorderBrush="Black" Cursor="Arrow" Margin="0,10,0,10">
+            <TabControl.Background>
+                <SolidColorBrush Color="#FF00CC6C" Opacity="0.5"/>
+            </TabControl.Background>
+            <TabItem Header="О курсе" Width="70" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock VerticalAlignment="Center" Margin="20,10,0,0" FontSize="25" Text="Для вашего уровня владения языком будет преложено пройти следующий план изучения языка C++:" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="1) Создание структур (struct)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="2" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="2) Вызов и обработка исключений (throw, try-catch)."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="3" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="3) Контейнеры list и forward_list."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Работа с файлами fstream, ofstream, ifstream."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Шаблоны. Написание шаблонных функций."/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Введение в ООП: Классы, Модификаторы доступа, Инкапсуляция"/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Введение в ООП: Наследование, Полиморфизм, паттерн Стратегия"/></TextBlock>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№1" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Создание структур (struct)." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Структура в C++ — это производный тип данных, который представляет определённую сущность. Структура может определять переменные, функции, конструкторы и деструкторы. Обычно структуры служат для хранения общедоступных данных в виде публичных переменных."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="        Для определения структуры применяется ключевое слово struct, а сам формат определения выглядит следующим образом:"
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/struct.png" Width="553" Height="680" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 1. Структуры в C++."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Имя структуры представляет произвольный идентификатор, к которому применяются те же правила, что и при наименовании переменных. После имени структуры в фигурных скобках помещаются компоненты структуры — переменные и функции."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№2" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="20">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1"
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Вызов и обработка исключений (throw, try-catch)."  Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          В процессе работы программы могут возникать различные ошибки. Например, при передаче файла по сети оборвется сетевое подключение или будут введены некорректные и недопустимые данные, которые вызовут падение программы. Такие ошибки еще называются исключениями."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Исключение представлякт временный объект любого типа, который используется для сигнализации об ошибке. Цель объекта-исключения состоит в том, чтобы передать информацию из точки, в которой произошла ошибка, в код, который должен ее обработать. Если исключение не обработано, то при его возникновении программа прекращает свою работу."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/try-catch.png" Width="553" Height="590" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                        Text="        	Рисунок 2. Работа с исключениями."	                                        
+                        TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№3" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Контейнер list." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Контейнер list представляет двухсвязный список, то есть такой список, где каждый элемент имеет указатели на предыдущий и последовательный элемент. Благодаря чему мы можем перемещаться по списку как вперед, так и назад. Для использования списка необходимо подключить заголовочный файл list."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          В отличие от других контейнеров для типа list не определена операция обращения по индексу или функция at(), которая выполняет похожую задачу. Тем не менее для контейнера list можно использовать функции front() и back(), которые возвращают соответственно первый и последний элементы."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/list.png" Width="580" Height="510" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                             Text="        	Рисунок 3. Контейнер list."	                                        
+                             TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Контейнер forward_list." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>                        
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Контейнер forward_list представляет односвязный список, то есть такой список, где каждый элемент хранит указатель на следующий элемент. Для использования данного типа списка необходимо подключить заголовочный файл forward_list."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Напрямую в списке forward_list можно получить только первый элемент. Для этого применяется функция front()."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/forward_list.png" Width="560" Height="350" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 4. Контейнер forward_list."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/iterator.png" Width="600" Height="290" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 4.1. Итератор."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="5">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№4" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Работа с файлами, fstream." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Большинство компьютерных программ работают с файлами, и поэтому возникает необходимость создавать, удалять, записывать читать, открывать файлы. Что же такое файл? Файл – именованный набор  байтов, который может быть сохранен на некотором накопителе. Ну, теперь ясно, что под файлом понимается некоторая последовательность байтов, которая имеет своё, уникальное имя, например файл.txt. В одной директории  не могут находиться файлы с одинаковыми именами. Под именем файла понимается не только его название, но и расширение, например: file.txt  и file.dat — разные файлы, хоть и имеют одинаковые названия. Существует такое понятие, как полное имя файлов – это полный адрес к директории файла с указанием имени файла, например: D:\docs\file.txt. Важно понимать эти базовые понятия, иначе сложно будет работать с файлами."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Для работы с файлами необходимо подключить заголовочный файл fstream. В fstream определены несколько классов и подключены заголовочные файлы ifstream — файловый ввод и ofstream — файловый вывод."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Класс fstream наследует функциональность от классов ifstream (для чтения из файла) и ofstream (для записи в файл) и предоставляет возможность открытия, закрытия и проверки состояния файла."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/fstream.png" Width="490" Height="410" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 5. Класс fstream."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Работа с файлами, ofstream." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Класс ofstream в C++ представляет собой класс, который используется для записи данных в файл. Он является частью стандартной библиотеки C++ и предоставляет функциональность для открытия файлов, записи данных в них и их закрытия."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>                        
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/ofstream.png" Width="490" Height="260" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 6. Класс ofstream."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" 
+                            TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Работа с файлами, ifstream." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Класс ifstream в C++ представляет собой класс, который используется для чтения данных из файла. Он является частью стандартной библиотеки C++ и предоставляет функциональность для открытия файлов, чтения данных из них и их закрытия."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/ifstream_main.png" Width="490" Height="520" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 7. Класс ifstream."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№5" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Шаблоны. Написание шаблонных функций." Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Шаблоны в C++ представляют собой механизм, который позволяет писать обобщенный код, который может работать с различными типами данных, не привязываясь к конкретному типу. Это позволяет создавать универсальные функции, классы и структуры данных, которые могут быть использованы с различными типами данных без необходимости дублирования кода."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/struct_template.png" Width="580" Height="380" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 8. Шаблонная структура."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="      Шаблонная функция в C++ представляет собой функцию, которая может работать с различными типами данных, не привязываясь к конкретному типу. Это позволяет создавать универсальные функции, которые могут быть использованы с различными типами данных без необходимости дублирования кода. Использование шаблонных функций повышает гибкость кода и упрощает его поддержку."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/func_template.png" Width="580" Height="450" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 9. Шаблонная функция."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№6" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Введение в ООП: Классы, Модификаторы доступа, Инкапсуляция" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Классы в C++ представляют собой конструкцию, которая позволяет создавать пользовательские типы данных. Они объединяют данные и функции, которые манипулируют этими данными, в единый объект. Классы являются основой объектно-ориентированного программирования в C++ и позволяют создавать абстракции, инкапсулировать данные и определять поведение объектов."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Например, в классе можно определить переменные-члены для хранения данных и методы для их обработки. Экземпляр класса, называемый объектом, содержит конкретные значения для этих переменных-членов."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/class.png" Width="450" Height="550" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 10. ООП: Классы, модификаторы доступа."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Инкапсуляция" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Инкапсуляция в C++ - это механизм, который позволяет объединить данные и методы, которые работают с этими данными, в единый объект, и скрыть детали реализации от внешнего мира. Это достигается путем объявления переменных-членов класса как закрытых (private), что означает, что они доступны только внутри класса, и предоставлением открытых (public) методов для работы с этими данными. Таким образом, инкапсуляция обеспечивает защиту данных от непосредственного доступа и позволяет контролировать их использование."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Инкапсуляция влияет на архитектуру программы, обеспечивая сокрытие деталей реализации и защиту данных от непосредственного доступа. Это способствует улучшению безопасности, облегчает поддержку и развитие программы, а также позволяет создавать более надежные и гибкие системы. Использование инкапсуляции помогает создавать модульный и структурированный код, что в свою очередь влияет на архитектуру программы, делая её более устойчивой и легко поддерживаемой."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/encapsulation.png" Width="533" Height="730" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 11. Инкапсуляция в С++."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="№7" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <ScrollViewer Cursor="Arrow">
+                    <StackPanel>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Введение в ООП: Наследование" Foreground="White"/>                        
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Наследование - это механизм, позволяющий создавать новый класс на основе уже существующего. При этом новый класс, называемый производным классом, наследует свойства и поведение базового класса. Это позволяет создавать иерархии классов."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Наследование в предоставляет ряд преимуществ. Во-первых, оно позволяет повторно использовать код, так как производный класс может наследовать свойства и методы базового класса. Это уменьшает дублирование кода и способствует созданию более эффективных и структурированных программ. Во-вторых, наследование позволяет создавать иерархии классов, что делает программы более гибкими и легко расширяемыми. Также оно способствует созданию абстракций и обобщений, что упрощает процесс разработки и поддержки программного обеспечения."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/inheritance.png" Width="590" Height="545" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>                        
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 12. Пример наследования."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="20" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Введение в ООП: Полиморфизм" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="14" 
+                            Text="          Полиморфизм в C++ - это свойство программного кода изменять своё поведение в зависимости от ситуации, возникающей во время выполнения программы. Это позволяет использовать один и тот же интерфейс для различных типов данных. В C++ полиморфизм реализуется с помощью виртуальных функций и перегрузки операторов. Виртуальные функции позволяют производным классам переопределять методы базового класса, что обеспечивает гибкость и расширяемость программы."
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/polymorphism1.png" Width="500" Height="475" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 13. Полиморфизм."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <Image Source="/Images/high/polymorphism2.png" Width="530" Height="505" HorizontalAlignment="Center" Stretch="Fill"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="18" 
+                            Text="        	Рисунок 14. Полиморфизм (продолжение)."	                                        
+                            TextWrapping="WrapWithOverflow" TextAlignment="Justify" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Foreground="White"/>
+                        <RibbonSeparator Height="10">
+                            <RibbonSeparator.OpacityMask>
+                                <SolidColorBrush Color="Black" Opacity="0"/>
+                            </RibbonSeparator.OpacityMask>
+                        </RibbonSeparator>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Конец" Width="50" FontFamily="Franklin Gothic Medium" Background="#FF00FF87" BorderBrush="Black" Cursor="Hand">
+                <StackPanel VerticalAlignment="Center">
+                    <RibbonSeparator Height="10" Cursor="Arrow">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="20,0" FontSize="25" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Финиш" Foreground="White" Cursor="Arrow"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0" FontSize="24" Grid.Row="1" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Text="Нажмите на кнопку ниже, когда дочитаете весь материал. Дальше будет тест ваших знаний." Foreground="White" TextAlignment="Center" Cursor="Arrow"/>
+                    <RibbonSeparator Height="10" Cursor="Arrow">
+                        <RibbonSeparator.OpacityMask>
+                            <SolidColorBrush Color="Black" Opacity="0"/>
+                        </RibbonSeparator.OpacityMask>
+                    </RibbonSeparator>
+                    <Button Content="Перейти к тесту" Height="35" Width="180" FontSize="20"
+                        FontFamily="Franklin Gothic Medium" Background="Black" Foreground="White" Click="Continue_Click" Cursor="Hand">
                         <Button.BorderBrush>
                             <SolidColorBrush Color="#FF707070" Opacity="0"/>
                         </Button.BorderBrush>

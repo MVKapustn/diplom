@@ -14,7 +14,7 @@ namespace DiplomKapustinMaximISP_41.Pages
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = true;
+            Close();
         }
 
         public static void Show(Window owner, string message, string title = "Message", int fontSize = 18)

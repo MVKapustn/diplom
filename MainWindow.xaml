@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiplomKapustinMaximISP_41"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="Изучение языка С++" Height="450" Width="800" MaxWidth="800" MinHeight="450" MinWidth="800">
     <Grid>
         <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" />

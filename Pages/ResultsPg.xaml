@@ -30,8 +30,14 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock  Text="Результаты" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="30" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock  x:Name="ResultsTB" Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." Margin="0,0,0,100" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="766"/>
+        <StackPanel>
+            <RibbonSeparator Height="10" Opacity="0"/>
+            <TextBlock Text="Результаты" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="30" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <RibbonSeparator Height="10" Opacity="0"/>
+            <TextBlock x:Name="ResultsTB" Text="Здесь будут располагаться вопрос, варианты ответов, кнопка ответить, а также шкала, отображающая прогресс прохождения теста." FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Height="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="766"/>
+            <RibbonSeparator Height="5" Opacity="0"/>
+            <DataGrid x:Name="DG" Height="190" Width="300"/>
+        </StackPanel>
         <Button Content="Вернуться на начальную страницу" Margin="0,0,0,20" Height="30" Width="370" FontSize="20" VerticalAlignment="Bottom" Click="StartTest_Click" FontFamily="Franklin Gothic Medium" Cursor="Hand" Background="Black" Foreground="White">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>

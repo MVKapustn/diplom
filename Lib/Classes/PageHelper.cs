@@ -6,7 +6,7 @@ namespace AdditionalLibrary.Classes
     public class PagesHelper
     {
         private static Skill skillLevel;
-
+        private static User currentUser;
         public enum Skill
         {
             Low,
@@ -20,5 +20,6 @@ namespace AdditionalLibrary.Classes
             MWFrame?.Navigate(new Uri($"Pages/{pageName}.xaml", UriKind.Relative));
         }
         public static Skill SkillLevel { get => skillLevel; set => skillLevel = value; }
+        public static User CurrentUser { get => currentUser; set => currentUser = value; }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiplomKapustinMaximISP_41.Pages"
         mc:Ignorable="d" Icon="/Images/users.ico"
-        Title="Вход" Height="345" Width="400">
+        Title="Вход" Height="365" Width="400" WindowStartupLocation="CenterScreen">
     <Grid>
         <Frame Grid.RowSpan="10">
             <Frame.Background>
@@ -33,7 +33,7 @@
                 FontFamily="Franklin Gothic Medium" 
                 Foreground="White"
                 FontSize="35"/>
-            <TextBox VerticalContentAlignment="Center" x:Name="login" Height="43" Width="219" FontFamily="Cascadia Mono" FontSize="30" TextAlignment="Center" Text="123"/>
+            <TextBox VerticalContentAlignment="Center" x:Name="loginTB" Height="43" Width="219" FontFamily="Cascadia Mono" FontSize="30" TextAlignment="Center" Text="123"/>
             <Label 
                 Content="Пароль"
                 VerticalAlignment="Center" 
@@ -42,7 +42,7 @@
                 FontFamily="Franklin Gothic Medium" 
                 Foreground="White"
                 FontSize="35"/>
-            <TextBox VerticalContentAlignment="Center" x:Name="password" Height="43" Width="219" FontFamily="Cascadia Mono" FontSize="30" TextAlignment="Center" Text="123"/>
+            <TextBox VerticalContentAlignment="Center" x:Name="passwordTB" Height="43" Width="219" FontFamily="Cascadia Mono" FontSize="30" TextAlignment="Center" Text="123"/>
             <RibbonSeparator Height="20" Opacity="0"/>
             <Button Content="Вход" 
                 Grid.Row="1" Height="35" Width="176" FontSize="25" Click="Login_Click" 

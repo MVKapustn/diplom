@@ -26,6 +26,7 @@
     <None Remove="Images\6thquestFalse2.png" />
     <None Remove="Images\6thquestTrue.png" />
     <None Remove="Images\arrays.png" />
+    <None Remove="Images\change_user.png" />
     <None Remove="Images\cinCode.png" />
     <None Remove="Images\coutCode.png" />
     <None Remove="Images\cpp.png" />
@@ -83,6 +84,7 @@
     <Resource Include="Images\6thquestFalse2.png" />
     <Resource Include="Images\6thquestTrue.png" />
     <Resource Include="Images\arrays.png" />
+    <Resource Include="Images\change_user.png" />
     <Resource Include="Images\cinCode.png" />
     <Resource Include="Images\coutCode.png" />
     <Resource Include="Images\cpp.png" />

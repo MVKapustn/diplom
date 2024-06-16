@@ -11,7 +11,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgsHigh
         }
         private void StartTest_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            PagesHelper.GetTo("BaseTestPgs/BaseTestPgMed2");
+            PagesHelper.GetTo("BaseTestPgsHigh/BaseTestPgHigh2");
         }
     }
 }

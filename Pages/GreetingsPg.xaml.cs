@@ -23,5 +23,12 @@ namespace DiplomKapustinMaximISP_41.Pages
         {
             PagesHelper.MainWindow?.Close();
         }
+
+        private void ChangeUser_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new();
+            login.Show();
+            PagesHelper.MainWindow.Close();
+        }
     }
 }

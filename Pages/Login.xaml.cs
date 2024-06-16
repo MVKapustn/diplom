@@ -12,7 +12,8 @@ namespace DiplomKapustinMaximISP_41.Pages
             InitializeComponent();
             if (!File.Exists(usersFileName))
             {
-                File.Create(usersFileName);
+                var myFile = File.Create(usersFileName);
+                myFile.Close();
             }
 
             string fileContent = File.ReadAllText(usersFileName);
@@ -69,14 +70,20 @@ namespace DiplomKapustinMaximISP_41.Pages
                 newUser.Id = users.Max(x => x.Id) + 1;
                 if (users.Find(x => x.Login == newUser.Login) is not null)
                 {
-                    CustomMessageBoxWindow customMessageBox = new("Такой пользователь уже существует!", "Ошибка", 18);
+                    CustomMessageBoxWindow customMessageBox = new("Такой пользователь уже существует!", "Ошибка", 18)
+                    {
+                        WindowStartupLocation = WindowStartupLocation.CenterScreen
+                    };
                     customMessageBox.Show();
                     return;
                 }
             }
             users.Add(newUser);
             File.WriteAllText(usersFileName, JsonSerializer.Serialize(users));
-            CustomMessageBoxWindow cMBox = new("Вы успешно зарегистрировались!", "Ура", 18);
+            CustomMessageBoxWindow cMBox = new("Вы успешно зарегистрировались!", "Ура", 18)
+            {
+                WindowStartupLocation = WindowStartupLocation.CenterScreen
+            };
             cMBox.Show();
         }
     }

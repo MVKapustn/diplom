@@ -108,5 +108,27 @@
                 </Button>
             </StackPanel>
         </StackPanel>
+        <Button Width="50" Height="50" BorderBrush="White" Foreground="White" Background="White" Grid.Row="2"
+                HorizontalAlignment="Right" Margin="0,90,12.5,0" Cursor="Hand" Click="ChangeUser_Click">            
+            <Button.Content>                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="/Images/change_user.png" Width="35" Height="35"/>
+                </StackPanel>
+            </Button.Content>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Ellipse Fill="{TemplateBinding Background}"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>        
     </Grid>
 </Page>

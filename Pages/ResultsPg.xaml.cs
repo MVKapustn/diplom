@@ -24,11 +24,11 @@ namespace DiplomKapustinMaximISP_41.Pages
 
             if (progressBar.Value < 50)
             {
-                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x53, 0x09)); ;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x53, 0x09));
             }
             else if (progressBar.Value > 50 && progressBar.Value < 70)
             {
-                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x9C, 0x09)); ;
+                progressBar.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0xEB, 0x9C, 0x09));
             }
             else if (progressBar.Value > 70 && progressBar.Value < 85)
             {
@@ -43,23 +43,32 @@ namespace DiplomKapustinMaximISP_41.Pages
             {
                 case PagesHelper.Skill.Low:
                     usersResultsFileName = "usersLowResults.txt";
-                    PagesHelper.CurrentUser.LowTestResult = (uint)results.Item1;
+                    if ((uint)results.Item1 > PagesHelper.CurrentUser.LowTestResult)
+                    {
+                        PagesHelper.CurrentUser.LowTestResult = (uint)results.Item1;
+                    }
                     break;
                 case PagesHelper.Skill.Medium:
                     usersResultsFileName = "usersMedResults.txt";
-                    PagesHelper.CurrentUser.MedTestResult = (uint)results.Item1;
+                    if ((uint)results.Item1 > PagesHelper.CurrentUser.MedTestResult)
+                    {
+                        PagesHelper.CurrentUser.MedTestResult = (uint)results.Item1;
+                    }
                     break;
                 case PagesHelper.Skill.High:
                     usersResultsFileName = "usersHighResults.txt";
-                    PagesHelper.CurrentUser.HighTestResult = (uint)results.Item1;
+                    if ((uint)results.Item1 > PagesHelper.CurrentUser.HighTestResult)
+                    {
+                        PagesHelper.CurrentUser.HighTestResult = (uint)results.Item1;
+                    }
                     break;
                 default:
                     break;
             }
-
             if (!File.Exists(usersResultsFileName))
             {
-                File.Create(usersResultsFileName);
+                var myFile = File.Create(usersResultsFileName);
+                myFile.Close();
             }
 
             string fileContent = File.ReadAllText(usersResultsFileName);
@@ -76,7 +85,7 @@ namespace DiplomKapustinMaximISP_41.Pages
             User currentUser = usersResultsList.Find(x => x.Login == PagesHelper.CurrentUser.Login);
 
             if (currentUser is null)
-            {                
+            {
                 usersResultsList.Add(PagesHelper.CurrentUser);
             }
             else
@@ -91,7 +100,7 @@ namespace DiplomKapustinMaximISP_41.Pages
                     for (int i = 0; i < usersResultsList.Count; i++)
                     {
                         arrayList.Add(new { Топ = i + 1, Имя_пользователя = usersResultsList[i].Login, Баллы = usersResultsList[i].LowTestResult });
-                    }                    
+                    }
                     break;
                 case PagesHelper.Skill.Medium:
                     usersResultsList = [.. usersResultsList.OrderBy(x => x.MedTestResult).Reverse()];

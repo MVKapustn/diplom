@@ -12,6 +12,7 @@ namespace DiplomKapustinMaximISP_41.Pages
 
         private void StartTest_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            BaseTestHelper.SetProgressToZero();
             PagesHelper.GetTo("BaseTestPgs/BaseTestPg2");
         }
     }

@@ -84,13 +84,15 @@ namespace DiplomKapustinMaximISP_41.Pages
 
             User currentUser = usersResultsList.Find(x => x.Login == PagesHelper.CurrentUser.Login);
 
+            
+
             if (currentUser is null)
             {
                 usersResultsList.Add(PagesHelper.CurrentUser);
             }
             else
             {
-                currentUser = PagesHelper.CurrentUser;
+                usersResultsList[usersResultsList.IndexOf(currentUser)] = PagesHelper.CurrentUser;
             }
             ArrayList arrayList = new ArrayList();
             switch (PagesHelper.SkillLevel)
@@ -113,7 +115,7 @@ namespace DiplomKapustinMaximISP_41.Pages
                     usersResultsList = [.. usersResultsList.OrderBy(x => x.HighTestResult).Reverse()];
                     for (int i = 0; i < usersResultsList.Count; i++)
                     {
-                        arrayList.Add(new { Топ = i + 1, Имя_пользователя = usersResultsList[i].Login, Баллы = usersResultsList[i].MedTestResult });
+                        arrayList.Add(new { Топ = i + 1, Имя_пользователя = usersResultsList[i].Login, Баллы = usersResultsList[i].HighTestResult });
                     };
                     break;
                 default:

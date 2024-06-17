@@ -7,7 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BaseTestPgHigh11">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -30,14 +29,14 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Вопрос "/><Run Language="ru-ru" Text="№10"/></TextBlock>
-        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Какова главная особенность типа данных union (объединение)?"/></TextBlock>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Вопрос "/><Run Text="№10*"/></TextBlock>
+        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Language="ru-ru" Text="Вам понравилось данное приложение? (Все ответы дадут 1 балл)"/></TextBlock>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
-            <TextBlock  Text="1) Позволяет произвести дальнейшее наследование" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="1) Да"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="2) Удобен при использовании циклов" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Language="ru-ru" Text="2) В целом неплохо, но можно доработать"/></TextBlock>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="3) Единовременно может быть использовано только одно поле" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Language="ru-ru" Text="3) Скучновато.."/></TextBlock>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
             <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">

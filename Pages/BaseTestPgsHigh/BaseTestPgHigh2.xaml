@@ -33,59 +33,9 @@
         <TextBlock Text="Вопрос №1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow"
            FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" 
-           Text="Как объявить массив целых чисел размером 10 в C++?"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
-            <RadioButton x:Name="falseRB1" Content="int array = {10};" VerticalContentAlignment="Center" FontSize="20" FontFamily="Franklin Gothic Medium" Foreground="White">
-                <RadioButton.RenderTransform>
-                    <ScaleTransform ScaleX="1" ScaleY="1"/>
-                </RadioButton.RenderTransform>
-                <RadioButton.Triggers>
-                    <EventTrigger RoutedEvent="MouseEnter" >
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.2" Duration="0:0:.4">
-                                    <DoubleAnimation.EasingFunction>
-                                        <QuarticEase />
-                                    </DoubleAnimation.EasingFunction>
-                                </DoubleAnimation>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.2" Duration="0:0:.4" >
-                                    <DoubleAnimation.EasingFunction>
-                                        <QuarticEase />
-                                    </DoubleAnimation.EasingFunction>
-                                </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="MouseLeave" >
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
-                                    <DoubleAnimation.EasingFunction>
-                                        <QuarticEase />
-                                    </DoubleAnimation.EasingFunction>
-                                </DoubleAnimation>
-                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
-                                    <DoubleAnimation.EasingFunction>
-                                        <QuarticEase />
-                                    </DoubleAnimation.EasingFunction>
-                                </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </RadioButton.Triggers>
-                <RadioButton.Background>
-                    <SolidColorBrush Color="White" Opacity="0"/>
-                </RadioButton.Background>
-                <RadioButton.BorderBrush>
-                    <SolidColorBrush Color="White" Opacity="0"/>
-                </RadioButton.BorderBrush>
-            </RadioButton>
-            <RibbonSeparator Width="20">
-                <RibbonSeparator.OpacityMask>
-                    <SolidColorBrush Color="Black" Opacity="0"/>
-                </RibbonSeparator.OpacityMask>
-            </RibbonSeparator>
-            <RadioButton Content="int array[10];" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" FontFamily="Franklin Gothic Medium" Foreground="White">
+           Text="Как объявить структуру &quot;Point&quot; с полями &quot;x&quot; и &quot;y&quot; типа int?"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">            
+            <RadioButton Content="struct Point { int x; int y; }" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" FontFamily="Franklin Gothic Medium" Foreground="White">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -135,7 +85,57 @@
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </RibbonSeparator.OpacityMask>
             </RibbonSeparator>
-            <RadioButton Content="int array(10);" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB2" FontFamily="Franklin Gothic Medium" Foreground="White">
+            <RadioButton x:Name="falseRB1" Content="structure Point { int x; int y; }" VerticalContentAlignment="Center" FontSize="20" FontFamily="Franklin Gothic Medium" Foreground="White">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </RadioButton.RenderTransform>
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.2" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.2" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="MouseLeave" >
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:.4">
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:.4" >
+                                    <DoubleAnimation.EasingFunction>
+                                        <QuarticEase />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+                <RadioButton.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </RadioButton.Background>
+                <RadioButton.BorderBrush>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </RadioButton.BorderBrush>
+            </RadioButton>
+            <RibbonSeparator Width="20">
+                <RibbonSeparator.OpacityMask>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </RibbonSeparator.OpacityMask>
+            </RibbonSeparator>
+            <RadioButton Content="point { int x; int y; }" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB2" FontFamily="Franklin Gothic Medium" Foreground="White">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>

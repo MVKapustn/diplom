@@ -31,9 +31,9 @@
             </Frame.Background>
         </Frame>
         <TextBlock Text="Вопрос №3" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Какой из приведённых циклов является range-based for?"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
-            <RadioButton x:Name="falseRB2" Content="for (int i = 0; i &lt; n; ++i) {};" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium">
+        <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Какой из контейнеров в C++ представляет двусвязный список?"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">            
+            <RadioButton x:Name="falseRB2" Content="forward_list" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="114">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -78,12 +78,12 @@
                     <SolidColorBrush Color="#FF707070" Opacity="0"/>
                 </RadioButton.BorderBrush>
             </RadioButton>
-            <RibbonSeparator Width="20">
+            <RibbonSeparator Width="5">
                 <RibbonSeparator.OpacityMask>
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </RibbonSeparator.OpacityMask>
             </RibbonSeparator>
-            <RadioButton Content="do {} while (i &lt; n);" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton Content="list" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -128,12 +128,12 @@
                     <SolidColorBrush Color="#FF707070" Opacity="0"/>
                 </RadioButton.BorderBrush>
             </RadioButton>
-            <RibbonSeparator Width="20">
+            <RibbonSeparator Width="10">
                 <RibbonSeparator.OpacityMask>
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </RibbonSeparator.OpacityMask>
             </RibbonSeparator>
-            <RadioButton Content="for (int x : array) {};" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton Content="vector" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="73">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -177,7 +177,7 @@
                 <RadioButton.BorderBrush>
                     <SolidColorBrush Color="#FF707070" Opacity="0"/>
                 </RadioButton.BorderBrush>
-            </RadioButton>
+            </RadioButton>            
         </StackPanel>
         <Button Content="Продолжить" Margin="0,0,0,20" Height="30" Width="160" FontSize="20" VerticalAlignment="Bottom" Click="Continue_Click" FontFamily="Franklin Gothic Medium" Foreground="White" Background="Black" Cursor="Hand">
             <Button.Resources>

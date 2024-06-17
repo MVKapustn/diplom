@@ -20,7 +20,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgsHigh
                 return;
             }
             BaseTestHelper.SaveAnswer(questionDifficult: PagesHelper.SkillLevel, questionNumber: 1, answer: trueRB1.IsChecked.Value);
-            PagesHelper.GetTo("BaseTestPgHigh/BaseTestPgHigh3");
+            PagesHelper.GetTo("BaseTestPgsHigh/BaseTestPgHigh3");
         }
     }
 }

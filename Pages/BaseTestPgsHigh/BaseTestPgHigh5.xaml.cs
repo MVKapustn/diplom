@@ -13,7 +13,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgsHigh
         }
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-            bool isAnyPressed = falseRB1.IsChecked.Value || trueRB1.IsChecked.Value;
+            bool isAnyPressed = falseRB2.IsChecked.Value || falseRB1.IsChecked.Value || trueRB1.IsChecked.Value;
             if (!isAnyPressed)
             {
                 CustomMessageBoxWindow.Show(owner: PagesHelper.MainWindow, message: "Сперва Вам нужно ответить!", title: "Ошибка!");

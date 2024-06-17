@@ -31,13 +31,13 @@
             </Frame.Background>
         </Frame>
         <TextBlock Text="Вопрос №9" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Какова главная особенность типа данных union (объединение)?"/></TextBlock>
+        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Для чего используются шаблонные конструкции (templates) в C++?"/>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
-            <TextBlock  Text="1) Позволяет произвести дальнейшее наследование" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="1) Для динамического распределения памяти." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="2) Удобен при использовании циклов" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="2) Для управления потоками ввода-вывода." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="3) Единовременно может быть использовано только одно поле" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="3) Для создания обобщённых функций и классов." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
             <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">

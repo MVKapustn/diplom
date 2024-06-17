@@ -33,9 +33,11 @@
         <TextBlock Text="Вопрос №2" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,30" FontSize="24" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         <TextBlock Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow"
            FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" 
-           ><Run Language="ru-ru" Text="Для чего предназначены указатели?"/></TextBlock>
+           Text="Какой оператор используется для генерации исключения в C++?" 
+           />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0">
-            <RadioButton x:Name="trueRB1" Content="Работа с памятью" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium">
+            
+            <RadioButton Content="try" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -85,7 +87,7 @@
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </RibbonSeparator.OpacityMask>
             </RibbonSeparator>
-            <RadioButton Content="Создание объектов" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton Content="catch" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB2" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -135,7 +137,7 @@
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </RibbonSeparator.OpacityMask>
             </RibbonSeparator>
-            <RadioButton Content="Завоевание мира" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB2" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton x:Name="trueRB1" Content="throw" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>

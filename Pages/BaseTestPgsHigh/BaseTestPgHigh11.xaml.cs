@@ -19,7 +19,8 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgsHigh
                 CustomMessageBoxWindow.Show(owner: PagesHelper.MainWindow, message: "Сперва Вам нужно ответить!", title: "Ошибка!");
                 return;
             }
-            BaseTestHelper.SaveAnswer(PagesHelper.SkillLevel, 10, trueRB1.IsChecked.Value);
+            CustomMessageBoxWindow.Show(owner: PagesHelper.MainWindow, message: "Благодарим за отзыв и использование нашего приложения!", title: "Спасибо!");
+            BaseTestHelper.SaveAnswer(PagesHelper.SkillLevel, 10, true);
             PagesHelper.GetTo("ResultsPg");
         }
     }

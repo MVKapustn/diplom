@@ -31,13 +31,13 @@
             </Frame.Background>
         </Frame>
         <TextBlock Text="Вопрос №7" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Какова главная особенность типа данных union (объединение)?"/></TextBlock>
+        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Что представляет собой наследование в контексте объектно-ориентированного программирования?"/>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
-            <TextBlock  Text="1) Позволяет произвести дальнейшее наследование" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="1) Возможность объекта принимать разные типы данных" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="2) Удобен при использовании циклов" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="2) Возможность создания объектов на основе других объектов" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="3) Единовременно может быть использовано только одно поле" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="3) Возможность существования нескольких форм для одной и той же функции" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
             <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
@@ -86,7 +86,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="20" Opacity="0"/>
-            <RadioButton Content="2" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton Content="2" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -132,7 +132,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="15" Opacity="0"/>
-            <RadioButton Content="3" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
+            <RadioButton Content="3" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -176,7 +176,7 @@
                 <RadioButton.BorderBrush>
                     <SolidColorBrush Color="#FF707070" Opacity="0"/>
                 </RadioButton.BorderBrush>
-            </RadioButton>
+            </RadioButton>            
         </StackPanel>
         <Button Content="Продолжить" Margin="0,0,0,20" Height="30" Width="160" FontSize="20" VerticalAlignment="Bottom" Click="Continue_Click" FontFamily="Franklin Gothic Medium" Foreground="White" Background="Black" Cursor="Hand">
             <Button.Resources>

@@ -30,14 +30,16 @@
                 </LinearGradientBrush>
             </Frame.Background>
         </Frame>
-        <TextBlock  Text="Вопрос №6" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text=" Какой из приведенных ниже фрагментов кода корректно объявляет перечисление (enum) в языке C?"/>
-        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
-            <TextBlock  Text="1) enum Color { 1 = RED , 2 = GREEN , 3 = BLUE };" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Вопрос №6" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="2) enum Color = { RED, GREEN, BLUE };" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Как объявить шаблонную функцию &quot;swap&quot; для обмена значениями двух переменных одного типа?"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="3) enum Color { RED, GREEN, BLUE };" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="1) "/><Run Text="template &lt;same T&gt; void swap(T&amp; a, T&amp; b) { T temp = a; a = b; b = temp; }"/></TextBlock>
+            <RibbonSeparator Height="10" Opacity="0" Width="0"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Language="ru-ru" Text="2) "/><Run Text="template &lt;T&gt; void swap(T&amp; a, T&amp; b) { T temp = a; a = b; b = temp; }"/></TextBlock>
+            <RibbonSeparator Height="10" Opacity="0" Width="0"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="3) template &lt;typename T&gt; void swap(T&amp; a, T&amp; b) { T temp = a; a = b; b = temp; "/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
             <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">

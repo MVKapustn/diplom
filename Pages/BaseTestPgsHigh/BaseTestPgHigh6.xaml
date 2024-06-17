@@ -31,12 +31,12 @@
             </Frame.Background>
         </Frame>
         <TextBlock  Text="Вопрос №5" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,100" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Какой ключевое слово используется для указания того, что функция не возвращает значение в C++?"/>
+        <TextBlock Margin="0,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Какой модификатор доступа предоставляет полный доступ к членам класса из любого места программы?"/>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0">
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
-            <RadioButton x:Name="falseRB2" Content="const" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="81">
+            <RadioButton x:Name="falseRB2" Content="private" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="81">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -82,7 +82,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="20" Opacity="0"/>
-            <RadioButton Content="return" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="83">
+            <RadioButton Content="protected" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="106">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -128,7 +128,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="15" Opacity="0"/>
-            <RadioButton Content="void" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="75">
+            <RadioButton Content="public" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="75">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>

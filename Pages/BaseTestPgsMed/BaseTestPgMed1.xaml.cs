@@ -11,6 +11,7 @@ namespace DiplomKapustinMaximISP_41.Pages.BaseTestPgsMed
         }
         private void StartTest_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            BaseTestHelper.SetProgressToZero();
             PagesHelper.GetTo("BaseTestPgsMed/BaseTestPgMed2");
         }
     }

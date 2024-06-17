@@ -5,7 +5,12 @@
         private static bool[] lowDifficult = new bool[6];
         private static bool[] medDifficult = new bool[7];
         private static bool[] highDifficult = new bool[10];
-        private static double progressBarStatus = 0;
+        private static double progressBarStatus;
+
+        public static void SetProgressToZero()
+        {
+            progressBarStatus = 0;
+        }
 
         public static double CalculateProgressBarStatus(PagesHelper.Skill questionDifficult)
         {

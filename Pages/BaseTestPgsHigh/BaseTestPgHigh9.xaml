@@ -31,16 +31,16 @@
             </Frame.Background>
         </Frame>
         <TextBlock Text="Вопрос №8" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,170" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
-        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"><Run Text="Какова главная особенность типа данных union (объединение)?"/></TextBlock>
+        <TextBlock Margin="0,0,0,90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White" Text="Что такое класс в объектно-ориентированном программировании?"/>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
-            <TextBlock  Text="1) Позволяет произвести дальнейшее наследование" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="1) Шаблон или чертёж для объектов, определяющий их свойства и поведение." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="2) Удобен при использовании циклов" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="2) Метод, который выполняет определённое действие." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
             <RibbonSeparator Height="10" Opacity="0" Width="0"/>
-            <TextBlock  Text="3) Единовременно может быть использовано только одно поле" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
+            <TextBlock  Text="3) Переменная, которая хранит данные." VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Margin="0,0,0,0" FontSize="20" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" TextAlignment="Center" Foreground="White"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,180,0,0">
-            <RadioButton x:Name="falseRB2" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
+            <RadioButton x:Name="trueRB1" Content="1" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -86,7 +86,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="20" Opacity="0"/>
-            <RadioButton Content="2" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium">
+            <RadioButton Content="2" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB2" Foreground="White" FontFamily="Franklin Gothic Medium">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>
@@ -132,7 +132,7 @@
                 </RadioButton.BorderBrush>
             </RadioButton>
             <RibbonSeparator Width="15" Opacity="0"/>
-            <RadioButton Content="3" VerticalContentAlignment="Center" FontSize="20" x:Name="trueRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
+            <RadioButton Content="3" VerticalContentAlignment="Center" FontSize="20" x:Name="falseRB1" Foreground="White" FontFamily="Franklin Gothic Medium" Width="30">
                 <RadioButton.RenderTransform>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
                 </RadioButton.RenderTransform>

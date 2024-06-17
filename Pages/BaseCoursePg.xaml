@@ -961,7 +961,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="4" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="4) Работа с файлами fstream, ofstream, ifstream."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="5" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="5) Шаблоны. Написание шаблонных функций."/></TextBlock>
                         <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="6" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="6) Введение в ООП: Классы, Модификаторы доступа, Инкапсуляция"/></TextBlock>
-                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Введение в ООП: Наследование, Полиморфизм, паттерн Стратегия"/></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Margin="20,0" FontSize="20" Grid.Row="7" TextWrapping="WrapWithOverflow" FontFamily="Franklin Gothic Medium" Foreground="White"><Run Language="ru-ru" Text="7) Введение в ООП: Наследование, Полиморфизм"/></TextBlock>
                     </Grid>
                 </ScrollViewer>
             </TabItem>
